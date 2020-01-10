@@ -1,0 +1,420 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AlessandrosHomebrewMonsters",
+				"abbreviation": "AHM",
+				"full": "Alessandro's Homebrew Monsters",
+				"url": "",
+				"authors": [
+					"Alessandro"
+				],
+				"convertedBy": [
+					"Alessandro"
+				]
+			}
+		],
+		"dateAdded": 1578682590
+	},
+	"monster": [
+		{
+			"name": "Cult Cleric",
+			"source": "AlessandrosHomebrewMonsters",
+			"page": 1,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 15,
+			"int": 11,
+			"wis": 18,
+			"cha": 20,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast|PHB}",
+								"{@spell guidance}",
+								"{@spell infestation|XGE}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell arms of hadar|PHB}",
+								"{@spell bane}",
+								"{@spell cause fear|XGE}",
+								"{@spell guiding bolt} (see \"Actions\" below)",
+								"{@spell hellish rebuke|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell crown of madness|PHB}",
+								"{@spell darkness|PHB}",
+								"{@spell hold person}",
+								"{@spell mirror image|PHB}",
+								"{@spell misty step|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell enemies abound|XGE}",
+								"{@spell hunger of hadar|PHB}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell wall of fire|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Terror",
+					"entries": [
+						"When a hostile creature within 5 feet of the black gauntlet makes an attack roll or a saving throw, it has disadvantage on the roll. Creatures that are immune to the {@condition frightened} condition are immune to this trait."
+					]
+				},
+				{
+					"name": "Tactical Discipline",
+					"entries": [
+						"The black gauntlet has advantage on all ability checks and saving throws made during combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black gauntlet makes two attacks with its quarterstaff."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Guiding Bolt (1st-Level Spell; Requires a Spell Slot)",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., one creature. {@h}14 ({@damage 4d6}) radiant damage, and the next attack roll made against the target before the end of the black gauntlet's next turn has advantage. If the black gauntlet casts this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Black Gauntlet of Bane",
+				"source": "BGDIA",
+				"entries": [
+					"Bane's devoted followers are warriors who seek to rule through martial strength and intimidation, cruel tyrants who use threats and gifts as needed to ensure loyalty. They enslave those too weak to resist them and shower the strong with gifts and promises of power to turn them into loyal vassals.",
+					{
+						"type": "entries",
+						"name": "Cruel Tyrants",
+						"entries": [
+							"Whenever Bane's followers gain power, they institute draconian measures to ensure that their rule is unquestioned. They stamp out all opposition while richly rewarding those who swear fealty."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Warrior Cult",
+						"entries": [
+							"Cultists of Bane are warriors who wear heavy armor and wield maces, swords, spears, and crossbows. They paint the right gauntlet of their armor black in honor of their patron. Bane's clerics wield black maces with heads shaped to look like a closed fist."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Cult Ranks",
+						"entries": [
+							"Bane's cultists operate according to strict military hierarchies. The lowest rank consists of the fists of Bane, foot soldiers who obey all orders without hesitation. They are led by iron consuls, cunning field officers who excel at coordinating the fists in combat. The black gauntlets are the priests who command the consuls."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/BGDIA/Black Gauntlet of Bane.png?v=1.93.3",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Sir Thomas",
+			"shortName": "Sir Thomas",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"page": 2,
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"up to 22 with his Demonic Energy"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "(can hoover)"
+				}
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+7",
+				"cha": "+9",
+				"str": "+10"
+			},
+			"skill": {
+				"athletics": "+10",
+				"deception": "+9",
+				"intimidation": "+9"
+			},
+			"senses": [
+				"Devil's Sight 60 ft. (can see through magical darkness)"
+			],
+			"passive": 12,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Aura Of Weakness",
+					"entries": [
+						"While Sir Thomas isn't {@condition incapacitated}, all hostile creatures that start their turn within 15 feet of him or that enter this area for the first time in a turn must succeed a {@dc 17} Constitution Saving Throw or suffer a -4 penalty on all the saving throws Sir Thomas make them do until the start of their next turn."
+					]
+				},
+				{
+					"name": "Demonic Energy",
+					"entries": [
+						"Sir Thomas has 14 Demonic Energy Points (DEPs) that fuel his abilities. He spends the indicated DEPs for each ability that requires them and regain a DEP for every succesful hit with his attack made with his action or reaction that don't spend themselves DEPs. Also his AC is 15 + half the DEPs value."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sir Thomas wields a +1 Greatsword (already calculated in his attacks) and he can make it appear in his hand with a bonus action. Sir Thomas has a magic bonding with this weapon and he can choose to use either Strength or Dexterity for the attacks made with it. He can also use it with only one hand."
+					]
+				},
+				{
+					"name": "Demonic Movement (1 DEP)",
+					"entries": [
+						"Sir Thomas can jump up to three times his normal jump distance without offering an opportunity attack. He can also use his reaction and reduce his falling damage by 120."
+					]
+				},
+				{
+					"name": "Phase (3 DEPs)",
+					"entries": [
+						"Sir Thomas casts {@spell misty step} and can teleport only towards a creature within range, appearing within 5 ft of it. He can choose to teleport in mid air."
+					]
+				},
+				{
+					"name": "Demonic Awakening (8 DEPs)",
+					"entries": [
+						"With a bonus action Sir Thomas reveals his true form and gains the following benefits:",
+						"- His walking speed increase by 10 ft,",
+						"- At the start of his every turn, he regain 20 HP,",
+						"- Every Rebel attack adds {@dice 1d10} to the damage,",
+						"- He make every Strength, Dexterity and Charisma saving throws with advantage,",
+						"- He gains 4 AC points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sir Thomas makes three weapon attacks and all of this attacks can be replaced by High Time or Helm Breaker, then he fires Enchanted Projectiles from his hand."
+					]
+				},
+				{
+					"name": "Rebel",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage. If the target is a creature and Sir Thomas rolls a 20 on the attack roll, the creature falls {@condition prone}. For every succesful hit, Sir Thomas regain 1 DEP."
+					]
+				},
+				{
+					"name": "High Time (2 DEPs)",
+					"entries": [
+						"Sir Thomas makes a Rebel attack and the target must succeed a {@dc 17} Strength or Dexterity Saving Throw (his choice) or be magically thrown up to 20 ft in air. Sir Thomas can spend another DEP to jump and follow the creature in air. Both, or only the target, stays magically aloft until the end of Sir Thomas next turn. After that, they gently return on the ground. While the target is aloft, he has a penalty of -2 to its AC and its attack rolls."
+					]
+				},
+				{
+					"name": "Helm Breaker (2 DEPs)",
+					"entries": [
+						"While Sir Thomas is in air, he can make a Rebel attack and immediately go down to the ground, taking the target with him if it is in air. The target must then succeed a {@dc 18} Strength or Dexterity Saving Throw (his choice) or be thrown 10 feet away from Sir Thomas and knocked {@condition prone}. The fall is considered like a normal fall for both."
+					]
+				},
+				{
+					"name": "Enchanted Projectiles",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 60 ft., one target. {@h}7 ({@damage 2d6}) Force damage."
+					]
+				},
+				{
+					"name": "Dance Macabre {@recharge 5}",
+					"entries": [
+						"Sir Thomas makes a flurry of swings and every creature within 5 ft of him makes a {@dc 18} Strength or Dexterity Saving Throw (his choice). On a failed save, the creatures takes {@damage 8d6} slashing damage and are thrown 10 feet away from Sir Thomas and knocked {@condition prone}. On a success, they take half the damage and don't suffer any other effect."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Guard (3 DEPs)",
+					"entries": [
+						"Sir Thomas deflects every physical attack made against him with his hands, reducing every hit he takes by {@dice 2d6}."
+					]
+				},
+				{
+					"name": "Release (1 DEPs / charge)",
+					"entries": [
+						"When Sir Thomas is targeted by a melee attack, he can consume up to 6 DEPs to repost the attack releasing demonic energy with his hands. Make a spell melee attack against the attacker ({@hit 9} to hit). If he hits, the target takes an amount of Force damage equal to 4 for every DEP spent and the target must succeed a {@dc 18} Strength Saving Throw or be thrown 10 feet away from Sir Thomas."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Sir Thomas makes a normal Rebel attack or two Enchanted Projectiles attacks."
+					]
+				},
+				{
+					"name": "Phase (3 DEPs)",
+					"entries": [
+						"Sir Thomas uses his Phase ability."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/BGDIA/Arkhan the Cruel.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/BGDIA/Arkhan the Cruel.png?v=1.94.5",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S",
+				null
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
