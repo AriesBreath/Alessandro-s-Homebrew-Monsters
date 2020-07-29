@@ -1,0 +1,1538 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AlessandrosHomebrewMonsters",
+				"abbreviation": "AHM",
+				"full": "Alessandro's Homebrew Monsters",
+				"url": "",
+				"authors": [
+					"Alessandro"
+				],
+				"convertedBy": [
+					"Alessandro"
+				]
+			}
+		],
+		"dateAdded": 1594941148,
+		"dateLastModified": 1594941148
+	},
+	"monster": [
+		{
+			"name": "Cult Cleric",
+			"source": "AlessandrosHomebrewMonsters",
+			"page": 1,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 15,
+			"int": 11,
+			"wis": 18,
+			"cha": 20,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The black gauntlet is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast|PHB}",
+								"{@spell guidance}",
+								"{@spell infestation|XGE}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell arms of hadar|PHB}",
+								"{@spell bane}",
+								"{@spell cause fear|XGE}",
+								"{@spell guiding bolt} (see \"Actions\" below)",
+								"{@spell hellish rebuke|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell crown of madness|PHB}",
+								"{@spell darkness|PHB}",
+								"{@spell hold person}",
+								"{@spell mirror image|PHB}",
+								"{@spell misty step|PHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell enemies abound|XGE}",
+								"{@spell hunger of hadar|PHB}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 2
+						},
+						"4": {
+							"spells": [
+								"{@spell wall of fire|PHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Terror",
+					"entries": [
+						"When a hostile creature within 5 feet of the black gauntlet makes an attack roll or a saving throw, it has disadvantage on the roll. Creatures that are immune to the {@condition frightened} condition are immune to this trait."
+					]
+				},
+				{
+					"name": "Tactical Discipline",
+					"entries": [
+						"The black gauntlet has advantage on all ability checks and saving throws made during combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black gauntlet makes two attacks with its quarterstaff."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Guiding Bolt (1st-Level Spell; Requires a Spell Slot)",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., one creature. {@h}14 ({@damage 4d6}) radiant damage, and the next attack roll made against the target before the end of the black gauntlet's next turn has advantage. If the black gauntlet casts this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Black Gauntlet of Bane",
+				"source": "BGDIA",
+				"entries": [
+					"Bane's devoted followers are warriors who seek to rule through martial strength and intimidation, cruel tyrants who use threats and gifts as needed to ensure loyalty. They enslave those too weak to resist them and shower the strong with gifts and promises of power to turn them into loyal vassals.",
+					{
+						"type": "entries",
+						"name": "Cruel Tyrants",
+						"entries": [
+							"Whenever Bane's followers gain power, they institute draconian measures to ensure that their rule is unquestioned. They stamp out all opposition while richly rewarding those who swear fealty."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Warrior Cult",
+						"entries": [
+							"Cultists of Bane are warriors who wear heavy armor and wield maces, swords, spears, and crossbows. They paint the right gauntlet of their armor black in honor of their patron. Bane's clerics wield black maces with heads shaped to look like a closed fist."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Cult Ranks",
+						"entries": [
+							"Bane's cultists operate according to strict military hierarchies. The lowest rank consists of the fists of Bane, foot soldiers who obey all orders without hesitation. They are led by iron consuls, cunning field officers who excel at coordinating the fists in combat. The black gauntlets are the priests who command the consuls."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/BGDIA/Black Gauntlet of Bane.png?v=1.93.3",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Sir Thomas",
+			"shortName": "Sir Thomas",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"up to 22 with his Demonic Energy"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "(can hoover)"
+				}
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+7",
+				"cha": "+9",
+				"str": "+10"
+			},
+			"skill": {
+				"athletics": "+10",
+				"deception": "+9",
+				"intimidation": "+9"
+			},
+			"senses": [
+				"Devil's Sight 60 ft. (can see through magical darkness)"
+			],
+			"passive": 12,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Aura Of Weakness",
+					"entries": [
+						"While Sir Thomas isn't {@condition incapacitated}, all hostile creatures that start their turn within 15 feet of him or that enter this area for the first time in a turn must succeed a {@dc 17} Constitution Saving Throw or suffer a -4 penalty on all the saving throws Sir Thomas make them do until the start of their next turn."
+					]
+				},
+				{
+					"name": "Demonic Energy",
+					"entries": [
+						"Sir Thomas has 14 Demonic Energy Points (DEPs) that fuel his abilities. He spends the indicated DEPs for each ability that requires them and regain a DEP for every succesful hit with his attack made with his action or reaction that don't spend themselves DEPs. Also his AC is 15 + half the DEPs value."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sir Thomas wields a +1 Greatsword (already calculated in his attacks) and he can make it appear in his hand with a bonus action. Sir Thomas has a magic bond with this weapon and he can choose to use either Strength or Dexterity for the attacks made with it. He can also use it with only one hand."
+					]
+				},
+				{
+					"name": "Demonic Movement (1 DEP)",
+					"entries": [
+						"Sir Thomas can jump up to three times his normal jump distance without offering an opportunity attack. He can also use his reaction and reduce his falling damage by 120."
+					]
+				},
+				{
+					"name": "Phase (3 DEPs)",
+					"entries": [
+						"Sir Thomas casts {@spell misty step} but can teleport only towards a creature within range, appearing within 5 ft of it. He can choose to teleport in mid air."
+					]
+				},
+				{
+					"name": "Demonic Awakening (8 DEPs)",
+					"entries": [
+						"With a bonus action Sir Thomas reveals his true form and gains the following traits:",
+						"- His walking speed increase by 10 ft,",
+						"- At the start of his every turn, he regain 20 HP,",
+						"- Every Rebel attack adds {@dice 1d10} to the damage,",
+						"- He make every Strength, Dexterity and Charisma saving throws with advantage,",
+						"- He gains 4 AC points.",
+						"- He gain vulnerability to Radiant damage"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sir Thomas makes three weapon attacks and all of this attacks can be replaced by High Time or Helm Breaker, then he fires Enchanted Projectiles from his hand."
+					]
+				},
+				{
+					"name": "Rebel",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage. If the target is a creature and Sir Thomas rolls a 20 on the attack roll, the creature falls {@condition prone}. For every succesful hit, Sir Thomas regain 1 DEP."
+					]
+				},
+				{
+					"name": "High Time (2 DEPs)",
+					"entries": [
+						"Sir Thomas makes a Rebel attack and the target must succeed a {@dc 17} Strength or Dexterity Saving Throw (his choice) or be magically thrown up to 20 ft in air. Sir Thomas can spend another DEP to jump and follow the creature in air. Both, or only the target, stays magically aloft until the end of Sir Thomas next turn. After that, they gently return on the ground. While the target is aloft, he has a penalty of -2 to its AC and its attack rolls."
+					]
+				},
+				{
+					"name": "Helm Breaker (2 DEPs)",
+					"entries": [
+						"While Sir Thomas is in air, he can make a Rebel attack and immediately go down to the ground, taking the target with him if it is in air. The target must then succeed a {@dc 18} Strength or Dexterity Saving Throw (his choice) or be thrown 10 feet away from Sir Thomas and knocked {@condition prone}. The fall is considered like a normal fall for both."
+					]
+				},
+				{
+					"name": "Enchanted Projectiles",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 60 ft., one target. {@h}7 ({@damage 2d6}) Force damage."
+					]
+				},
+				{
+					"name": "Dance Macabre {@recharge 5}",
+					"entries": [
+						"Sir Thomas makes a flurry of swings and every creature within 5 ft of him makes a {@dc 18} Dexterity Saving Throw. On a failed save, the creatures takes {@damage 8d6} slashing damage and are thrown 10 feet away from Sir Thomas and knocked {@condition prone}. On a success, they take half the damage and don't suffer any other effect."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Guard (3 DEPs)",
+					"entries": [
+						"Sir Thomas deflects every physical attack made against him with his hands, reducing every hit he takes by {@dice 2d6}."
+					]
+				},
+				{
+					"name": "Release (1 DEPs / charge)",
+					"entries": [
+						"When Sir Thomas is targeted by a melee attack, he can consume up to 6 DEPs to repost the attack releasing demonic energy with his hands. Make a spell melee attack against the attacker ({@hit 9} to hit). If he hits, the target takes an amount of Force damage equal to 4 for every DEP spent and the target must succeed a {@dc 17} Strength Saving Throw or be thrown 10 feet away from Sir Thomas."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Sir Thomas makes a normal Rebel attack or two Enchanted Projectiles attacks."
+					]
+				},
+				{
+					"name": "Phase (3 DEPs)",
+					"entries": [
+						"Sir Thomas uses his Phase ability."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				null,
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Mival",
+			"shortName": "Mival",
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"16 with mage armor",
+						"+ 1d4 that changes every round"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 18,
+			"int": 20,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"int": "+12",
+				"wis": "+11",
+				"con": "+11"
+			},
+			"skill": {
+				"arcana": "+19",
+				"history": "+12",
+				"investigation": "+12",
+				"nature": "+12"
+			},
+			"passive": 14,
+			"resist": [
+				{
+					"special": "damage from spells"
+				}
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"charmed",
+						"frightened"
+					],
+					"note": "due to Immeral's imprisonment"
+				}
+			],
+			"languages": [
+				"any six languages"
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mival is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks, or spell save {@dc 21}, {@hit 13} to hit with spell attacks if his staff is activated). Mival has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell fog cloud|PHB}",
+								"{@spell mage armor}",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility|PHB}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink|PHB}",
+								"{@spell counterspell}",
+								"{@spell dispel magic|PHB}",
+								"{@spell fireball|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell polymorph|PHB}",
+								"{@spell storm sphere|XGE}",
+								"{@spell wall of fire|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell enervation|XGE}",
+								"{@spell synaptic static|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning|PHB}",
+								"{@spell disintegrate|PHB}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell teleport}",
+								"{@spell whirlwind|XGE}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell feeblemind|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Superior Magic Resistance",
+					"entries": [
+						"Mival has advantage on saving throws against spells and other magical effects. Mival also has resistance against every damage from the same effects."
+					]
+				},
+				{
+					"name": "Material Component Independence",
+					"entries": [
+						"Mival doesn't need to provide the material component in order to cast a spell."
+					]
+				},
+				{
+					"name": "Sculpt Spells",
+					"entries": [
+						"When Mival casts an Evocation spell, he can choose a number of creatures he can see equal to 1 + the spell's level. Those creatures don't receive any harmful effect from that spell."
+					]
+				},
+				{
+					"name": "Clone",
+					"entries": [
+						"Mival cast the spell Clone on himself and his clone has already matured. If Mival dies and his soul is free and willing to return, his soul transfers at the clone and Mival comes back to life as it."
+					]
+				},
+				{
+					"name": "Superior Shield",
+					"entries": [
+						"Mival's shield spell can be cast upon a creature Mival can see within 30 ft from him and forms an expecially resistant bubble of energy that works even with area effects. A creature inside the bubble has a +5 to any saving throw those effects make it do and if it succeed he receive no damage from that effect."
+					]
+				},
+				{
+					"name": "Superior Mage Armor",
+					"entries": [
+						"The mage armor cast by Mival gives him an extra bonus of {@dice 1d4} point to his armor class that changes every round."
+					]
+				},
+				{
+					"name": "Mival's Staff",
+					"entries": [
+						"Mival personally enchanted his staff that now grants, to the one who attunes to it, a +1 bonus to spell's to hit modifier and spell's save DC. The staff must be first activated with an action to grant this bonus. While active, it radiates a clear blue magic dim light out of a 10 ft radius and it hums noisly. The staff can be deactivated with a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Generate Duplicate (Recharges after a Long Rest)",
+					"entries": [
+						"Mival magically generates an exact duplicate of himself and of every item he is carrying. This duplicate is an illusion but it is tangible and can take every action Mival can. It has the same AC as Mival, half of his maximum Hit Points and acts immediately after Mival's turn. The duplicate is directly controlled by Mival (no action required), has his same spell list prepared and they share the same spell slots pool. The duplicate lasts for 1 minute, until Mival dismisses it as an Action or until it is dispelled. If a dispel spell is cast upon the duplicate, the caster must succed a {@dc 20} ability check using its spellcasting ability to correctly dispel the clone."
+					]
+				},
+				{
+					"name": "Activate Staff",
+					"entries": [
+						"Mival activates his staff."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Lesser Spell",
+					"entries": [
+						"Mival casts a spell of 2nd level or lower."
+					]
+				},
+				{
+					"name": "Greater Spell (costs two actions)",
+					"entries": [
+						"Mival casts a spell of 3rd or 4th level."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Archmage",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption.",
+									"An archmage typically has one or more apprentice mages, and an archmage's abode has numerous magical wards and guardians to discourage interlopers."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Archmage.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Archmage.png?v=1.99.1",
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Immeral",
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				14,
+				{
+					"ac": 16,
+					"condition": "(engulfed by the shadows)"
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 160",
+				"average": 340
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover) when engulfed by the shadows"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 18,
+			"int": 16,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"con": "+12",
+				"wis": "+11",
+				"cha": "+14"
+			},
+			"skill": {
+				"insight": "+11",
+				"religion": "+11",
+				"persuasion": "+14",
+				"perception": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 21,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				{
+					"special": "Sleep"
+				}
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Immeral is a 20th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 22}, {@hit 14} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. He knows the following warlock spells:"
+					],
+					"will": [
+						"{@spell counterspell|PHB}",
+						"{@spell dispel magic|PHB}"
+					],
+					"rest": {
+						"3e": [
+							"{@spell enemies abound|XGE}",
+							"{@spell fireball|PHB}",
+							"{@spell fly|PHB}",
+							"{@spell hypnotic pattern|PHB}",
+							"{@spell misty step|PHB}",
+							"{@spell shield|PHB}"
+						],
+						"2e": [
+							"{@spell dimension door|PHB}",
+							"{@spell dominate beast|PHB}",
+							"{@spell dominate person|PHB}",
+							"{@spell forcecage|PHB}",
+							"{@spell mass suggestion|PHB}",
+							"{@spell plane shift|PHB}",
+							"{@spell shadow of moil|XGE}",
+							"{@spell synaptic static|XGE}"
+						],
+						"1e": [
+							"{@spell feeblemind|PHB}",
+							"{@spell true polymorph|PHB}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch|PHB}",
+								"{@spell eldritch blast|PHB}",
+								"{@spell minor illusion|PHB}",
+								"{@spell thunderclap|XGE}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/3 Day)",
+					"entries": [
+						"If Immeral fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Dark Presence (3/3 Day)",
+					"entries": [
+						"Immeral can impose disadavantage to an attack roll, saving throw or ability check to a creature he can see that is making that roll."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Immeral has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Shadows Takeover",
+					"entries": [
+						"Immeral can choose to stop opposing Shar's influence and be engulfed by her mystical shadows to become her avatar. While in this state he gains the following trait:",
+						"- He gains a flying (hovering) speed of 30 ft.",
+						"- His AC becomes 20.",
+						"- He gains resistance to necrotic and force damage.",
+						"- He gains the same benefits as the {@spell shadow of moil|XGE} spell, but he isn't obscured for the purpose of being hit, the shadows deal {@damage 4d6} psychic damage and a creature that gets hit by them must succeed on a {@dc 22} Wisdom saving throw or be {@condition frightened} by Immeral until the start of the creature's next turn.",
+						"Finally, while Immeral is illuminated by a light source of a spell of 3rd level or higher while in this state, he temporarily loses all these benefits."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"If Immeral is engulfed in shadows he can make a Shadow Slash, then he can cast a spell or use one of his Shadow actions, if available."
+					]
+				},
+				{
+					"name": "Absorption",
+					"entries": [
+						"Immeral points his hand against a creature within 5 ft of him that must succeed a {@dc 22} Constitution saving throw or fall victim of the eldritch process of absorption of its vital energy. While under the effect of this process, the creature is {@condition stunned}. The creature make a {@dc 22} Wisdom saving throw at the start of each of its turn and, if it succeed, it breaks free from the process and is no longer {@condition stunned}. When the creature falls victim of this process and whenever he fails one of these saving throws made to break free, the process absorbes its victim's health dealing necrotic damage by an amount of points equal to the creature's hit die, as long as Immeral stays within 5 ft. of that creature. The creature's hit point maximum is reduced by the same amount and it recovers 5 of this points for every long rest. If this process reduces a creature to 0 Hit Points, the creature falls {@condition unconscious} and becomes an Aberration within {@dice 10d6} minutes."
+					]
+				},
+				{
+					"name": "Shadow Slash (only while in the Shadow Takeover state)",
+					"entries": [
+						"Shadow blade-like tendrils erupt from Immeral and slash every creature Immeral chooses within 10 ft. of him. He makes a separate roll to hit for every target.",
+						"{@atk ms} {@hit 14} to hit, reach 10 ft., one creature. {@h}27 ({@damage 6d6 + 6}) slashing damage. A hit creature must succeed a {@dc 22} Strength saving throw or be hurled up to 10 ft away from Immeral and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Shadow Absorption (only while in the Shadow Takeover state)",
+					"entries": [
+						"Immeral watches a creature within 30 ft from him and a shadow tendril lashes out toward it. The tendril dissolves if Immeral is ever more than 30 ft. far from the creature. The tendril uses the Absorption action but the health points drained are doubled and regenerate Immeral's Hit Points. There's no limit on how many tendril he can have at the same time. A creature can use an action to make a {@dc 22} athletic check to help a creature break free off the tendril. The tendril can be broken, it has an AC of 12 and 20 Hit Points."
+					]
+				},
+				{
+					"name": "Shadow Hunters (only while in the Shadow Takeover state) {@recharge 5}",
+					"entries": [
+						"Immeral summons in an empty spot within 20 ft of him four Shadow Mastiffs that last for 1 minute, until Immeral dies or until Immeral dismisses them as a bonus action. If the Mastiffs are already summoned and Immeral loses the Shadow Takeover trait, they remain summoned. The Shadow Mastiffs act in the initiative order immediately after Immeral. The Shadow Mastiffs use their normal statblock except for their attack line that is the following.",
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage. If the target is a creature, it must succeed on a {@dc 22} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Shadow Shockwave (only while in the Shadow Takeover state) {@recharge 5}",
+					"entries": [
+						"The shadows engulfing Immeral twist and shake, then they explode in a smoking shockwave. Every creature within 20 ft from Immeral must make a {@dc 22} Charisma saving throw. A creature takes {@damage 10d10} necrotic damage on a failed save, or half as much damage on a successful one. After a failed save, a creature disappears in a faint smoke cloud, banned in the Shadow Plane until the end of its next turn. After Immeral uses this ability, he loses all Shadow Takeover traits until this ability gets recharged."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast Spell",
+					"entries": [
+						"Immeral casts a spell of 4th level or lower."
+					]
+				},
+				{
+					"name": "Counterspell Chain",
+					"entries": [
+						"If Immeral has already casted Counterspell, he can cast it once again by spending a Legendary Action. He can't do it again until his next turn."
+					]
+				},
+				{
+					"name": "Shadow Will (costs two actions)",
+					"entries": [
+						"Immeral uses one of his Shadow actions."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/DMG/Avatar of Death.png?v=1.103.8",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone",
+				"stunned"
+			]
+		},
+		{
+			"name": "Krusk",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"plate armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"con": "+6",
+				"str": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Krusk is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"footerEntries": [
+						"*3 beams and every beam pushes a target 10 ft away from krusk"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}*",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell darkness}",
+								"{@spell fear}",
+								"{@spell hypnotic pattern}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dimension Jumping {@recharge 5}",
+					"entries": [
+						"As a bonus action Krusk can touch a creature that must succeed a CD 16 Charisma saving throw or be shifted to the Shadow Plane. A willing creature can choose to fail this saving throw. Regardless of the success or the failure of the saving throw, Krusk can shift himself as part of the same bonus action. While on the Shadow Plane, a teleported creature can repeat its saving throws at the start of its turn, returning in the same spot it was or on the nearest free spot on a success."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The gloom weaver has advantage on saving throws against being {@condition charmed}, and magic can't put it to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Krusk makes two halberd attacks and casts one spell that takes 1 action to cast."
+					]
+				},
+				{
+					"name": "Shadow Halberd",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage plus 26 ({@damage 4d12}) necrotic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Misty Escape (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the gloom weaver takes damage, it turns {@condition invisible} and teleports up to 60 feet to an unoccupied space it can see. It remains {@condition invisible} until the start of its next turn or until it attacks or casts a spell."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/AHM/Gloom Weaver.png?v=1.106.9",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/gloom-weaver.mp3?v=1.106.9"
+			},
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible"
+			]
+		},
+		{
+			"name": "Kalaver",
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 54",
+				"average": 153
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 21,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"str": "+10"
+			},
+			"skill": {
+				"athletics": "+10",
+				"history": "+8",
+				"stealth": "+13",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"all the languages it knew in life"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Kalaver is a 11th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He regains its expended spell slots when he finishes a short or long rest. He knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell far step|XGE}",
+								"{@spell mirror image}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Kalaver fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Master of the Grave",
+					"entries": [
+						"While within 30 feet of Kalaver, any undead ally of Kalaver makes saving throws with advantage, and that ally regains {@dice 1d6} hit points whenever it starts its turn there."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Kalaver regains 15 hit points at the start of its turn. If Kalaver takes radiant damage, this trait doesn't function at the start of Kalaver's next turn. Kalaver dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Great Four Armed One",
+					"entries": [
+						"Kalaver has two pairs of arms. Every arm can use a two-handed melee weapons appropriate to his size with only one hand without suffer any type of disadavantage that would suffer of because of the two-handed property or the size of the weapon."
+					]
+				},
+				{
+					"name": "War Caster",
+					"entries": [
+						"Kalaver does not need to have a free hand to cast a spell with a somatic component."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kalaver makes four melee attacks, one for each of his arms, with the appropriate weapon. Kalaver holds a spear, a greatsword and two scimitars."
+					]
+				},
+				{
+					"name": "Lance",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d12 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Rampage {@recharge 5}",
+					"entries": [
+						"Kalaver makes a weapon attack against each creature of his choice within 15 ft. of him using the proper weapon according to the distance the creature is. A creature hit by this attack must succeed on a {@dc 18} Constitution saving throw or be {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shield Of Weapons",
+					"entries": [
+						"When Kalaver is targeted by a weapon attack, he can cross his weapons to form a sort of shield, interposing them between he and the attacker. Kalaver gets a +5 bonus to his armor class against every weapon attack he receives from the attacker and from every creature within 5 ft. of it."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"Kalaver makes a weapon attack."
+					]
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"Kalaver casts a cantrip."
+					]
+				},
+				{
+					"name": "Far Step",
+					"entries": [
+						"If Kalaver has already cast {@spell far step|XGE}, he can teleport."
+					]
+				},
+				{
+					"name": "Summon Undead (Costs 2 Actions)",
+					"entries": [
+						"Up to five skeletons or zombies appear in unoccupied spaces within 30 feet of Kalaver and remain until destroyed. Undead summoned in this way roll initiative and act in the next available turn. Kalaver can have up to five undead summoned by this ability at a time."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/AHM/Skull Lord.png?v=1.106.15",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skull-lord.mp3?v=1.106.15"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "Sir Thomas 2",
+			"shortName": "Sir Thomas",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"up to 22 with his Demonic Energy"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "(can hoover)"
+				}
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+7",
+				"cha": "+9",
+				"str": "+10",
+				"dex": "+8"
+			},
+			"skill": {
+				"athletics": "+10",
+				"deception": "+14",
+				"intimidation": "+9",
+				"perception": "+7"
+			},
+			"senses": [
+				"Devil's Sight 60 ft. (can see through magical darkness)"
+			],
+			"passive": 12,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Aura Of Weakness",
+					"entries": [
+						"While Sir Thomas isn't {@condition incapacitated}, all hostile creatures within 15 feet of him suffer a -4 penalty on all the saving throws Sir Thomas makes them do."
+					]
+				},
+				{
+					"name": "Demonic Energy",
+					"entries": [
+						"Sir Thomas has 14 Demonic Energy Points (DEPs) that fuel his abilities. He spends the indicated DEPs for each ability that requires them and regains {@dice 2d4} DEPs at the start of his turn. Also his armor class is 15 + half the DEPs value."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sir Thomas wields a +1 Greatsword (already calculated in his attacks) and he can make it appear in his hand with a bonus action. Sir Thomas has a magic bond with this weapon and he can choose to use either Strength or Dexterity for the attacks made with it. He can also use it with only one hand."
+					]
+				},
+				{
+					"name": "Demonic Movement (1 DEP)",
+					"entries": [
+						"Until the start of his next turn, Sir Thomas can jump up to three times his normal jump distance without offering an opportunity attack. He can also use his reaction and reduce his falling damage by 120."
+					]
+				},
+				{
+					"name": "Phase (3 DEPs)",
+					"entries": [
+						"If Sir Thomas is within 30 ft. from a creature, he can cast {@spell misty step} to teleport towards that creature appearing within 5 ft of it. He can choose to teleport in mid air."
+					]
+				},
+				{
+					"name": "Demonic Awakening (8 DEPs)",
+					"entries": [
+						"With a bonus action Sir Thomas reveals his true form and gains the following traits:",
+						"- His walking speed increases by 10 ft,",
+						"- At the start of his every turn, he regains 20 HP,",
+						"- Every Rebel attack adds {@dice 1d10} to the damage,",
+						"- He makes every Strength, Dexterity and Charisma saving throws with advantage,",
+						"- He gains 4 AC points.",
+						"- He gains vulnerability to Radiant damage"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sir Thomas makes three weapon attacks and all of this attacks can be replaced by High Time or Helm Breaker, then he fires Enchanted Projectiles from his hand."
+					]
+				},
+				{
+					"name": "Rebel",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage. If the target is a creature and Sir Thomas rolls a 20 on the attack roll, the creature falls {@condition prone}."
+					]
+				},
+				{
+					"name": "High Time (2 DEPs)",
+					"entries": [
+						"Sir Thomas makes a Rebel attack. If it hits the target must succeed on a {@dc 17} Strength or Dexterity Saving Throw (his choice) or be magically thrown up to 20 ft in air. Sir Thomas can then use Demonic Movement to jump and follow that creature in air. Both, or only the target, stays magically aloft until the end of Sir Thomas next turn. After that, they gently return on the ground. While the target is aloft, he has a penalty of -2 to its armor class and its attack rolls."
+					]
+				},
+				{
+					"name": "Helm Breaker (2 DEPs)",
+					"entries": [
+						"While Sir Thomas is in air, he makes a Rebel attack and immediately goes down to the ground, taking the target with him if it is in air. If it hits, the target must succeed on a {@dc 18} Strength or Dexterity Saving Throw (his choice) or be thrown 10 feet away from Sir Thomas and be knocked {@condition prone}. The fall is considered like a normal fall for both."
+					]
+				},
+				{
+					"name": "Enchanted Projectiles",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 60 ft., one target. {@h}7 ({@damage 2d6}) Force damage."
+					]
+				},
+				{
+					"name": "Dance Macabre {@recharge 5}",
+					"entries": [
+						"Sir Thomas makes a flurry of swings and every creature within 5 ft of him makes a {@dc 18} Dexterity Saving Throw. On a failed save, a creature takes {@damage 8d6} slashing damage, is thrown 10 feet away from Sir Thomas and is knocked {@condition prone}. On a success, they take half the damage and don't suffer any other effect."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Guard (3 DEPs)",
+					"entries": [
+						"Sir Thomas deflects every physical attack made against him with his hands, reducing every hit he takes by {@dice 2d6}."
+					]
+				},
+				{
+					"name": "Release (1 DEP / charge)",
+					"entries": [
+						"When Sir Thomas is targeted by a melee attack, he can consume up to 4 DEPs to repost the attack releasing demonic energy with his hands. Make a spell melee attack against the attacker ({@hit 9} to hit). If he hits, the target takes an amount of Force damage equal to 8 for every DEP spent and the target must succeed a {@dc 17} Strength Saving Throw or be thrown 10 feet away from Sir Thomas."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Sir Thomas makes a normal Rebel attack or two Enchanted Projectiles attacks."
+					]
+				},
+				{
+					"name": "Phase",
+					"entries": [
+						"Sir Thomas uses his Phase ability."
+					]
+				}
+			],
+			"tokenUrl": "https://5e.tools/img/AHM/Sir Thomas.png?v=1.106.16",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				null,
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
