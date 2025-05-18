@@ -1,0 +1,3825 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AlessandrosHomebrewMonsters",
+				"abbreviation": "AHM",
+				"full": "Alessandro's Homebrew Monsters",
+				"url": "https://github.com/AriesBreath/Alessandro-s-Homebrew-Monsters",
+				"authors": [
+					"Alessandro"
+				],
+				"convertedBy": [
+					"Alessandro"
+				]
+			}
+		],
+		"dateAdded": 1616108025,
+		"dateLastModified": 1616108025
+	},
+	"monster": [
+		{
+			"name": "Mival",
+			"shortName": "Mival",
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"16 with mage armor",
+						"+ 1d4 that changes every round"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 18,
+			"int": 20,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"int": "+12",
+				"wis": "+11",
+				"con": "+11"
+			},
+			"skill": {
+				"arcana": "+19",
+				"history": "+12",
+				"investigation": "+12",
+				"nature": "+12"
+			},
+			"passive": 14,
+			"resist": [
+				{
+					"special": "damage from spells"
+				}
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"charmed",
+						"frightened"
+					],
+					"note": "due to Immeral's imprisonment"
+				}
+			],
+			"languages": [
+				"any six languages"
+			],
+			"cr": "22",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mival is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks, or spell save {@dc 22}, {@hit 14} to hit with spell attacks if his staff is activated). Mival has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell fog cloud|PHB}",
+								"{@spell mage armor}",
+								"{@spell shield|PHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility|PHB}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink|PHB}",
+								"{@spell counterspell}",
+								"{@spell dispel magic|PHB}",
+								"{@spell fireball|PHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell polymorph|PHB}",
+								"{@spell storm sphere|XGE}",
+								"{@spell wall of fire|PHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell enervation|XGE}",
+								"{@spell synaptic static|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning|PHB}",
+								"{@spell disintegrate|PHB}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell teleport}",
+								"{@spell whirlwind|XGE}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell feeblemind|PHB}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Superior Magic Resistance",
+					"entries": [
+						"Mival has advantage on saving throws against spells and other magical effects. Mival also has resistance against every damage from the same effects."
+					]
+				},
+				{
+					"name": "Material Component Independence",
+					"entries": [
+						"Mival doesn't need to provide the material component in order to cast a spell."
+					]
+				},
+				{
+					"name": "Sculpt Spells",
+					"entries": [
+						"When Mival casts an Evocation spell, he can choose a number of creatures he can see equal to 1 + the spell's level. Those creatures don't receive any harmful effect from that spell."
+					]
+				},
+				{
+					"name": "Clone",
+					"entries": [
+						"Mival cast the spell Clone on himself and his clone has already matured. If Mival dies and his soul is free and willing to return, his soul transfers to the clone and Mival comes back to life as it."
+					]
+				},
+				{
+					"name": "Superior Shield",
+					"entries": [
+						"Mival's shield spell can be cast upon a creature Mival can see within 30 ft from him and forms an expecially resistant bubble of energy that works even with area effects. A creature inside the bubble has a +5 to any saving throw the area effects make it do and if it succeed it receives no damage from that effect."
+					]
+				},
+				{
+					"name": "Superior Mage Armor",
+					"entries": [
+						"The mage armor cast by Mival gives him an extra bonus of {@dice 1d4} point to his armor class that changes every round."
+					]
+				},
+				{
+					"name": "Mival's Staff",
+					"entries": [
+						"Mival personally enchanted his staff that now grants, to the one who attunes to it, a +2 bonus to spell's to hit modifier and spell's save DC. The staff must be first activated with an action to grant this bonus. While active, it radiates a clear blue magic dim light out of a 10 ft radius and it hums noisly. The staff can be deactivated with a bonus action. Mival always enters the fight with its staff activated if he can."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 10} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Generate Duplicate (Recharges after a Long Rest)",
+					"entries": [
+						"Mival magically generates an exact duplicate of himself and of every item he is carrying. This duplicate is an illusion but it is tangible and can take every action Mival can. It has the same AC as Mival, half of his maximum Hit Points and acts immediately after Mival's turn. The duplicate is directly controlled by Mival (no action required), has his same spell list prepared and they share the same spell slots pool. The duplicate lasts for 1 minute, until Mival dismisses it as an action or until it is dispelled. If a dispel spell is cast on the duplicate, the caster must succed a {@dc 20} ability check using its spellcasting ability to correctly dispel the clone."
+					]
+				},
+				{
+					"name": "Activate Staff",
+					"entries": [
+						"Mival activates his staff."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Lesser Spell",
+					"entries": [
+						"Mival casts a spell of 2nd level or lower."
+					]
+				},
+				{
+					"name": "Greater Spell (costs two actions)",
+					"entries": [
+						"Mival casts a spell of 3rd or 4th level."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Challenge Rating: 21 (22 finale, leggere in fondo)",
+					"Offensive CR: 24",
+					"Defensive CR: 18",
+					"Proficiency Bonus: +7",
+					"Effective HP: 302 (24d8+96)",
+					"Effective AC: 22",
+					"Average Damage Per Round: 198",
+					"Save DC: 22",
+					"Expected CR: 22",
+					"Defensive",
+					"Hit Points: 212 (170*125%, aumento di un quarto gli HP per tenere conto della resistenza agli incantesimi)",
+					"Armor Class: 18 (16+1d4=18)",
+					"Offensive",
+					"Damage Per Round: 198",
+					"Save DC: 22",
+					"Save Proficiencies: 3-4",
+					"Traits",
+					"Magic Resistance",
+					"Routine Di Attacco",
+					"Mival entra in combattimento con Mage Armor e il suo bastone attivi.",
+					"Turno 1: La prima azione è evocare il suo Duplicato Illusorio. Il duplicato casta Whirlwind (70 danni). Con le azioni leggendarie casta una Fireball di lv 4 (31,5 danni) e un Firebolt (22 danni).",
+					"Turno 2: Mival casta Chain Lightning di lv 8. Considero che prenda 2 creature di base + una terza castato di lv 8 (135 danni), Whirlwind si muove e prende altre due creature (70 danni). Azioni leggendarie si ripetono (31,5 e 22 danni).",
+					"Turno 3: Mival casta Chain Lightning (90 danni). Whirlwind si muove (70 danni) e azioni leggendarie (31,5 e 22 danni).",
+					"Totale: 595,5 / 3 = 198."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mival%20Starag.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mival.png",
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Immeral",
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				14,
+				{
+					"ac": 16,
+					"condition": "(engulfed by the shadows)"
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 160",
+				"average": 340
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(hover) when engulfed by the shadows"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 18,
+			"int": 16,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"con": "+12",
+				"wis": "+11",
+				"cha": "+14"
+			},
+			"skill": {
+				"insight": "+11",
+				"religion": "+11",
+				"persuasion": "+14",
+				"perception": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 21,
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				{
+					"special": "Sleep"
+				}
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Immeral is a 20th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 22}, {@hit 14} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. He knows the following warlock spells:"
+					],
+					"will": [
+						"{@spell counterspell|PHB}",
+						"{@spell dispel magic|PHB}"
+					],
+					"rest": {
+						"3e": [
+							"{@spell enemies abound|XGE}",
+							"{@spell fireball|PHB}",
+							"{@spell fly|PHB}",
+							"{@spell hypnotic pattern|PHB}",
+							"{@spell misty step|PHB}",
+							"{@spell shield|PHB}"
+						],
+						"2e": [
+							"{@spell dimension door|PHB}",
+							"{@spell dominate beast|PHB}",
+							"{@spell dominate person|PHB}",
+							"{@spell forcecage|PHB}",
+							"{@spell mass suggestion|PHB}",
+							"{@spell plane shift|PHB}",
+							"{@spell shadow of moil|XGE}",
+							"{@spell synaptic static|XGE}"
+						],
+						"1e": [
+							"{@spell feeblemind|PHB}",
+							"{@spell true polymorph|PHB}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch|PHB}",
+								"{@spell eldritch blast|PHB}",
+								"{@spell minor illusion|PHB}",
+								"{@spell thunderclap|XGE}"
+							]
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/3 Day)",
+					"entries": [
+						"If Immeral fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Dark Presence (3/3 Day)",
+					"entries": [
+						"Immeral can impose disadavantage to an attack roll, saving throw or ability check to a creature he can see that is making that roll."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Immeral has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Shadows Takeover",
+					"entries": [
+						"Immeral can choose to stop opposing Shar's influence and be engulfed by her mystical shadows to become her avatar. While in this state he gains the following trait:",
+						"- He gains a flying (hovering) speed of 30 ft.",
+						"- His AC becomes 20.",
+						"- He gains resistance to necrotic and force damage.",
+						"- He gains the same benefits as the {@spell shadow of moil|XGE} spell, but he isn't obscured for the purpose of being hit, the shadows deal {@damage 4d6} psychic damage and a creature that gets hit by them must succeed on a {@dc 22} Wisdom saving throw or be {@condition frightened} by Immeral until the start of the creature's next turn.",
+						"Finally, while Immeral is illuminated by a light source of a spell of 3rd level or higher while in this state, he temporarily loses all these benefits."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"If Immeral is engulfed in shadows he can make a Shadow Slash, then he can cast a spell or use one of his Shadow actions, if available."
+					]
+				},
+				{
+					"name": "Absorption",
+					"entries": [
+						"Immeral points his hand against a creature within 5 ft of him that must succeed a {@dc 22} Constitution saving throw or fall victim of the eldritch process of absorption of its vital energy. While under the effect of this process, the creature is {@condition stunned}. The creature make a {@dc 22} Wisdom saving throw at the start of each of its turn and, if it succeed, it breaks free from the process and is no longer {@condition stunned}. When the creature falls victim of this process and whenever he fails one of these saving throws made to break free, the process absorbes its victim's health dealing necrotic damage by an amount of points equal to the creature's hit die, as long as Immeral stays within 5 ft. of that creature. The creature's hit point maximum is reduced by the same amount and it recovers 5 of this points for every long rest. If this process reduces a creature to 0 Hit Points, the creature falls {@condition unconscious} and becomes an Aberration within {@dice 10d6} minutes."
+					]
+				},
+				{
+					"name": "Shadow Slash (only while in the Shadow Takeover state)",
+					"entries": [
+						"Shadow blade-like tendrils erupt from Immeral and slash every creature Immeral chooses within 10 ft. of him. He makes a separate roll to hit for every target.",
+						"{@atk ms} {@hit 14} to hit, reach 10 ft., one creature. {@h}27 ({@damage 6d6 + 6}) slashing damage. A hit creature must succeed a {@dc 22} Strength saving throw or be hurled up to 10 ft away from Immeral and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Shadow Absorption (only while in the Shadow Takeover state)",
+					"entries": [
+						"Immeral watches a creature within 30 ft from him and a shadow tendril lashes out toward it. The tendril dissolves if Immeral is ever more than 30 ft. far from the creature. The tendril uses the Absorption action but the health points drained are doubled and regenerate Immeral's Hit Points. There's no limit on how many tendril he can have at the same time. A creature can use an action to make a {@dc 22} athletic check to help a creature break free off the tendril. The tendril can be broken, it has an AC of 12 and 20 Hit Points."
+					]
+				},
+				{
+					"name": "Shadow Hunters (only while in the Shadow Takeover state) {@recharge 5}",
+					"entries": [
+						"Immeral summons in an empty spot within 20 ft of him four Shadow Mastiffs that last for 1 minute, until Immeral dies or until Immeral dismisses them as a bonus action. If the Mastiffs are already summoned and Immeral loses the Shadow Takeover trait, they remain summoned. The Shadow Mastiffs act in the initiative order immediately after Immeral. The Shadow Mastiffs use their normal statblock except for their attack line that is the following.",
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage. If the target is a creature, it must succeed on a {@dc 22} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Shadow Shockwave (only while in the Shadow Takeover state) {@recharge 5}",
+					"entries": [
+						"The shadows engulfing Immeral twist and shake, then they explode in a smoking shockwave. Every creature within 20 ft from Immeral must make a {@dc 22} Charisma saving throw. A creature takes {@damage 10d10} necrotic damage on a failed save, or half as much damage on a successful one. After a failed save, a creature disappears in a faint smoke cloud, banned in the Shadow Plane until the end of its next turn. After Immeral uses this ability, he loses all Shadow Takeover traits until this ability gets recharged."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast Spell",
+					"entries": [
+						"Immeral casts a spell of 4th level or lower."
+					]
+				},
+				{
+					"name": "Counterspell Chain",
+					"entries": [
+						"If Immeral has already casted Counterspell, he can cast it once again by spending a Legendary Action. He can't do it again until his next turn."
+					]
+				},
+				{
+					"name": "Shadow Will (costs two actions)",
+					"entries": [
+						"Immeral uses one of his Shadow actions."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/DMG/Avatar of Death.png?v=1.103.8"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Immeral.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Immeral.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone",
+				"stunned"
+			]
+		},
+		{
+			"name": "Krusk",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"plate armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"con": "+6",
+				"str": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Krusk is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"footerEntries": [
+						"*3 beams and every beam pushes a target 10 ft away from krusk"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}*",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell darkness}",
+								"{@spell fear}",
+								"{@spell hypnotic pattern}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dimension Jumping {@recharge 5}",
+					"entries": [
+						"As a bonus action Krusk can touch a creature that must succeed a CD 16 Charisma saving throw or be shifted to the Shadow Plane. A willing creature can choose to fail this saving throw. Regardless of the success or the failure of the saving throw, Krusk can shift himself as part of the same bonus action. While on the Shadow Plane, a teleported creature can repeat its saving throws at the start of its turn, returning in the same spot it was or on the nearest free spot on a success."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The gloom weaver has advantage on saving throws against being {@condition charmed}, and magic can't put it to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Krusk makes two halberd attacks and casts one spell that takes 1 action to cast."
+					]
+				},
+				{
+					"name": "Shadow Halberd",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage plus 26 ({@damage 4d12}) necrotic damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Misty Escape (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When the gloom weaver takes damage, it turns {@condition invisible} and teleports up to 60 feet to an unoccupied space it can see. It remains {@condition invisible} until the start of its next turn or until it attacks or casts a spell."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Gloom Weaver.png?v=1.106.9"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Krusk.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Krusk.png",
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible"
+			]
+		},
+		{
+			"name": "Kalaver",
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d10 + 54",
+				"average": 153
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 21,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"str": "+10"
+			},
+			"skill": {
+				"athletics": "+10",
+				"history": "+8",
+				"stealth": "+13",
+				"intimidation": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"all the languages it knew in life"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Kalaver is a 11th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He regains its expended spell slots when he finishes a short or long rest. He knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell far step|XGE}",
+								"{@spell mirror image}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Kalaver fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Master of the Grave",
+					"entries": [
+						"While within 30 feet of Kalaver, any undead ally of Kalaver makes saving throws with advantage, and that ally regains {@dice 1d6} hit points whenever it starts its turn there."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Kalaver regains 15 hit points at the start of its turn. If Kalaver takes radiant damage, this trait doesn't function at the start of Kalaver's next turn. Kalaver dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Great Four Armed One",
+					"entries": [
+						"Kalaver has two pairs of arms. Every arm can use a two-handed melee weapons appropriate to his size with only one hand without suffer any type of disadavantage that would suffer of because of the two-handed property or the size of the weapon."
+					]
+				},
+				{
+					"name": "War Caster",
+					"entries": [
+						"Kalaver does not need to have a free hand to cast a spell with a somatic component."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kalaver makes four melee attacks, one for each of his arms, with the appropriate weapon. Kalaver holds a lance, a greatsword and two scimitars."
+					]
+				},
+				{
+					"name": "Lance",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d12 + 5}) piercing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Rampage {@recharge 5}",
+					"entries": [
+						"Kalaver makes a weapon attack against each creature of his choice within 15 ft. of him using the proper weapon according to the distance the creature is. A creature hit by this attack must succeed on a {@dc 18} Constitution saving throw or be {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shield Of Weapons",
+					"entries": [
+						"When Kalaver is targeted by a weapon attack, he can cross his weapons to form a sort of shield, interposing them between he and the attacker. Kalaver gets a +5 bonus to his armor class against every weapon attack he receives from the attacker and from every creature within 5 ft. of it."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Weapon Attack",
+					"entries": [
+						"Kalaver makes a weapon attack."
+					]
+				},
+				{
+					"name": "Cantrip",
+					"entries": [
+						"Kalaver casts a cantrip."
+					]
+				},
+				{
+					"name": "Far Step",
+					"entries": [
+						"If Kalaver has already cast {@spell far step|XGE}, he can teleport."
+					]
+				},
+				{
+					"name": "Summon Undead (Costs 2 Actions)",
+					"entries": [
+						"Up to five skeletons or zombies appear in unoccupied spaces within 30 feet of Kalaver and remain until destroyed. Undead summoned in this way roll initiative and act in the next available turn. Kalaver can have up to five undead summoned by this ability at a time."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Skull Lord.png?v=1.106.15"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Kalaver.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Kalaver.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "Sir Thomas",
+			"shortName": "Sir Thomas",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"up to 22 with his Demonic Energy"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d8 + 72",
+				"average": 180
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "(can hoover)"
+				}
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+7",
+				"cha": "+9",
+				"str": "+10"
+			},
+			"skill": {
+				"athletics": "+10",
+				"deception": "+14",
+				"intimidation": "+9",
+				"perception": "+7"
+			},
+			"senses": [
+				"Devil's Sight 60 ft. (can see through magical darkness)"
+			],
+			"passive": 12,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Aura Of Weakness",
+					"entries": [
+						"While Sir Thomas isn't {@condition incapacitated}, all hostile creatures within 15 feet of him suffer a -4 penalty on all the saving throws Sir Thomas makes them do."
+					]
+				},
+				{
+					"name": "Demonic Energy",
+					"entries": [
+						"Sir Thomas has 14 Demonic Energy Points (DEPs) that fuel his abilities. He spends the indicated DEPs for each ability that requires them and regains {@dice 2d4} DEPs at the start of his turn. Also his armor class is 15 + half the DEPs value."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Sir Thomas wields a +1 Greatsword (already calculated in his attacks) and he can make it appear in his hand with a bonus action. Sir Thomas has a magic bond with this weapon and he can choose to use either Strength or Dexterity for the attacks made with it. He can also use it with only one hand."
+					]
+				},
+				{
+					"name": "Demonic Movement (1 DEP)",
+					"entries": [
+						"Until the start of his next turn, Sir Thomas can jump up to three times his normal jump distance without offering an opportunity attack. He can also use his reaction and reduce his falling damage by 120."
+					]
+				},
+				{
+					"name": "Phase (3 DEPs)",
+					"entries": [
+						"If Sir Thomas is within 30 ft. from a creature, he can cast {@spell misty step} to teleport towards that creature appearing within 5 ft of it. He can choose to teleport in mid air."
+					]
+				},
+				{
+					"name": "Demonic Awakening (8 DEPs)",
+					"entries": [
+						"With a bonus action Sir Thomas reveals his true form and gains the following traits:",
+						"- His walking speed increases by 10 ft,",
+						"- At the start of his every turn, he regains 20 HP,",
+						"- Every Rebel attack adds {@dice 1d10} to the damage,",
+						"- He makes every Strength, Dexterity and Charisma saving throws with advantage,",
+						"- He gains 4 AC points.",
+						"- He gains vulnerability to Radiant damage"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sir Thomas makes three weapon attacks and all of this attacks can be replaced by High Time or Helm Breaker, then he fires Enchanted Projectiles from his hand."
+					]
+				},
+				{
+					"name": "Rebel",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage. If the target is a creature and Sir Thomas rolls a 20 on the attack roll, the creature falls {@condition prone}."
+					]
+				},
+				{
+					"name": "High Time (2 DEPs)",
+					"entries": [
+						"Sir Thomas makes a Rebel attack. If it hits the target must succeed on a {@dc 17} Strength or Dexterity Saving Throw (his choice) or be magically thrown up to 20 ft in air. Sir Thomas can then use Demonic Movement to jump and follow that creature in air. Both, or only the target, stays magically aloft until the end of Sir Thomas next turn. After that, they gently return on the ground. While the target is aloft, he has a penalty of -2 to its armor class and its attack rolls."
+					]
+				},
+				{
+					"name": "Helm Breaker (2 DEPs)",
+					"entries": [
+						"While Sir Thomas is in air, he makes a Rebel attack and immediately goes down to the ground, taking the target with him if it is in air. If it hits, the target must succeed on a {@dc 18} Strength or Dexterity Saving Throw (his choice) or be thrown 10 feet away from Sir Thomas and be knocked {@condition prone}. The fall is considered like a normal fall for both."
+					]
+				},
+				{
+					"name": "Enchanted Projectiles",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 60 ft., one target. {@h}7 ({@damage 2d6}) Force damage."
+					]
+				},
+				{
+					"name": "Dance Macabre {@recharge 5}",
+					"entries": [
+						"Sir Thomas makes a flurry of swings and every creature within 5 ft of him makes a {@dc 18} Dexterity Saving Throw. On a failed save, a creature takes {@damage 8d6} slashing damage, is thrown 10 feet away from Sir Thomas and is knocked {@condition prone}. On a success, they take half the damage and don't suffer any other effect."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Guard (3 DEPs)",
+					"entries": [
+						"Sir Thomas deflects every physical attack made against him with his hands, reducing every hit he takes by {@dice 2d6}."
+					]
+				},
+				{
+					"name": "Release (1 DEP / charge)",
+					"entries": [
+						"When Sir Thomas is targeted by a melee attack, he can consume up to 4 DEPs to repost the attack releasing demonic energy with his hands. Make a spell melee attack against the attacker ({@hit 9} to hit). If he hits, the target takes an amount of Force damage equal to 8 for every DEP spent and the target must succeed a {@dc 17} Strength Saving Throw or be thrown 10 feet away from Sir Thomas."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Sir Thomas makes a normal Rebel attack or two Enchanted Projectiles attacks."
+					]
+				},
+				{
+					"name": "Phase",
+					"entries": [
+						"Sir Thomas uses his Phase ability."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Sir%20Thomas.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Sir%20Thomas%20Demonic%20Awakening.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Sir%20Thomas%20Demonic%20Awakening.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Sir%20Thomas.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Caryma",
+			"shortName": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14,
+				{
+					"ac": 17,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+6",
+				"dex": "+7"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"arcana": "+5",
+				"deception": "+8",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Deep Speech",
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Caryma is a 12th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). She regains her expended spell slots when she finishes a short or long rest. She knows the following warlock spells:"
+					],
+					"footerEntries": [
+						"*3 beams"
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell mage armor}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}*",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell arms of Hadar}",
+								"{@spell blight}",
+								"{@spell contact other plane}",
+								"{@spell Evard's black tentacles}",
+								"{@spell fear}",
+								"{@spell hunger of Hadar}",
+								"{@spell hypnotic pattern}",
+								"{@spell invisibility}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Caryma has advantage on saving throws against being {@condition charmed}, and magic can't put her to sleep."
+					]
+				},
+				{
+					"name": "Maddening Teleport {@recharge}",
+					"entries": [
+						"While in dim light or darkness, Caryma can cast {@spell misty step} leaving behind an illusory duplicate of herself while she becomes {@condition invisible}. Both the invisibility and the illusion last until the start of her next turn.",
+						"Physical interaction with the duplicate reveals it to be an illusion, because things can pass through it. A creature can determine that it is an illusion with a successful {@dc 16} Intelligence (Investigation). If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
+						"If a creature makes physical contact with the illusion, such as with a melee attack or by touching it, the illusion seems to shatter like glass, causing an horrifying vision upon the creature that must succeed a {@dc 16} Wisdom saving throw or suffer a short-term {@variantrule madness}."
+					]
+				},
+				{
+					"name": "Otherwordly Tentacles",
+					"entries": [
+						"Caryma is blessed with Hadar's otherwordly gift. She can transform into an eldritch creature and evoke and lash out an indefinite amount of tentacles from her body out to 30 feet. The attacks made with these tentacles are magical.",
+						"The tentacles can be broken, they have an AC of 10 and 15 Hit Points.",
+						"If Caryma casts {@spell Vampiric Touch}, she can immediately make a tentacle attack. As long as she concentrate on this spell, every tentacle attack can effectively use the spell instead of its normal effect, extending her reach, dealing the damage of the spell and healing her."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Caryma can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Caryma makes a Tentacle Dagger attack and two other tentacle attacks."
+					]
+				},
+				{
+					"name": "Tentacle Dagger",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 30 ft., one target. {@h}18 ({@damage 4d6 + 4}) piercing damage. The target must succeed on a {@dc 16} or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Grasping Tentacle",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 30 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage and the target is {@condition restrained}. The target can use an action to try to free itself making a successful {@dc 16} Strength (Athletics) or Dexterity (Acrobatics) check (it's choice). The target must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of Caryma and her tantacles. A target can repeat the saving throw at the end of each of its turns, ending the current effect on a success."
+					]
+				},
+				{
+					"name": "Control Preys",
+					"entries": [
+						"Caryma can choose to take two of the following actions, but she can't crush and throw the creatures in the same turn.",
+						"- She can move one or more creatures she is restraining up to 30 feet as long as the tentacles are within 30 feet from her.",
+						"- She can crush every creature she is restraining with her tentacles. The creatures take 11 ({@damage 2d6 + 4}) bludgeoning damage or half this damage if they succeed a {@dc 16} Strength saving throw.",
+						"- She can throw one or more creatures she is restraining up to {@dice 1d4 x 10} feet in a direction she chooses."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Entropic Ward (Recharges after a Short or Long Rest)",
+					"entries": [
+						"When a creature makes an attack roll against Caryma, she can interpose a ward between her and the attacker, imposing disadavantage on that attack."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Challenge Rating: 9",
+					"Offensive CR: 9",
+					"Defensive CR: 9",
+					"Proficiency Bonus: +4",
+					"Effective HP: 162 (20d8+40)",
+					"Effective AC: 20",
+					"Average Damage Per Round: 62",
+					"Effective Attack Bonus: +8",
+					"Defensive",
+					"Hit Points: 130",
+					"Armor Class: 19 (17+2 per gestire maddening teleport ed entropic ward)",
+					"Offensive",
+					"Damage Per Round: 62",
+					"Attack Bonus/Save DC: 8",
+					"Use Saves? No",
+					"Vulnerabilities: No",
+					"Resistances/Immunities: No",
+					"Flies and can deal damage at range (CR 0-9 only): No",
+					"Save Proficiencies: 0-2",
+					"Traits",
+					"Constrict",
+					"Frightful Presence",
+					"Routine di attacco:",
+					"Turno 1: 2xGrasping Tentacle, 1xTentacle Dagger",
+					"Turno 2: 1xGrasping Tentacle, 1x Control Preys, 1x Tentacle Dagger",
+					"Turn 3: 2xControl Preys, 1x Tentacle Dagger",
+					"DPR: 186/3=62",
+					"Questa routine di attacco massimizza i danni possibili. Non ho considerato gli attacchi con tentacolo di Vampiric Touch (3x17,5 per turno) perchè nonostante il regen il dpr scende e impedisce l'utilizzo dei tratti Frightful Presence e Constrict, abbassando la CR e tenendola a 9.",
+					"Non ho considerato la possibilità di usare Darkness e attaccare con vantaggio perchè nonostante il +5 a colpire il DPR scende a 34 (il primo turno casta Darkness e gli altri due usa i primi due turni della routine di attacco) e abbassa la CR.",
+					"Per gestire Maddening Teleport ed Entropic Ward ho dato un +2 alla CA (portandola a 20 effettiva)."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Caryma.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Caryma.png",
+			"traitTags": [
+				"Devil's Sight",
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DS",
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible"
+			]
+		},
+		{
+			"name": "Mylakhrion",
+			"shortName": true,
+			"isNamedCreature": true,
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(60 ft. when walking with tentacles)"
+				},
+				"climb": {
+					"number": 60,
+					"condition": "when walking with tentacles"
+				}
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 18,
+			"int": 16,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"con": "+9",
+				"wis": "+8"
+			},
+			"skill": {
+				"persuasion": "+10",
+				"religion": "+8",
+				"insight": "+8",
+				"deception": "+10",
+				"arcana": "+8"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic",
+				"poison"
+			],
+			"immune": [
+				"acid",
+				"cold"
+			],
+			"conditionImmune": [
+				"blinded",
+				"frightened"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Deep Speech",
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Mylakhrion is a 17th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He regains his expended spell slots when he finishes a short or long rest. He knows the following warlock spells:"
+					],
+					"footerEntries": [
+						"*cast with a bonus action, Mylakhrion is immune to its effects and doesn't have to maintain concentration on it.",
+						"**4 beams."
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast}**",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell antilife shell}",
+								"{@spell arms of Hadar}",
+								"{@spell cloudkill}",
+								"{@spell contact other plane}",
+								"{@spell Evard's black tentacles}",
+								"{@spell fear}",
+								"{@spell hypnotic pattern}",
+								"{@spell invisibility}"
+							],
+							"slots": 4,
+							"lower": 1
+						}
+					},
+					"will": [
+						"{@spell hunger of Hadar}*"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Otherwordly Tentacles",
+					"entries": [
+						"Mylakhrion is blessed with Hadar's otherwordly gift. He can transform into an eldritch creature and evoke and lash out an indefinite amount of tentacles from his body out to 60 feet, composed of shambling fanged mouths and shaking eyes. The attacks made with these tentacles are magical.",
+						"The tentacles can be broken, they have an AC of 12 and 18 Hit Points, but if the attacker is within 5 ft. of the tentacles they attack back biting it dealing {@damage 2d6} piercing damage.",
+						"His tentacles can pass through the barrier of {@spell antilife shell} he cast.",
+						"Mylakhrion can place two or more tentacles on the ground to raise himself and use them as legs. When he does so, his speed is increased to 60 feet. He also gain a climb speed of 60 feet."
+					]
+				},
+				{
+					"name": "Hadar's Favourite One",
+					"entries": [
+						"Hadar gifted Mylakhrion with a powerful boon for his services and his loyalty. Mylakhrion can cast at will {@spell hunger of hadar} with a bonus action. Moreover, Mylakhrion isn't affected by it and doesn't need to maintain concentration on it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mylakhrion makes two Fanged Tentacle attacks, then he chooses to use either Fanged Tentacle, Maddening Grasp or Control Preys."
+					]
+				},
+				{
+					"name": "Fanged Tentacle",
+					"entries": [
+						"{@atk ms} {@hit 10} to hit, reach 60 ft., one target. {@h}26 ({@damage 6d6 + 5}) piercing damage and the target is either automatically {@condition restrained} or knocked {@condition prone} if it fails a {@dc 18} Strength saving throw (Mylakhrion's choice). If the target is {@condition restrained}, it can use an action to try to free itself making a successful {@dc 18} Strength (Athletics) or Dexterity (Acrobatics) check (it's choice)."
+					]
+				},
+				{
+					"name": "Maddening Grasp",
+					"entries": [
+						"Thousands of tiny transparent spiders seem to swarm from the tentacles towards every creature {@condition restrained} by them. Each creatures takes 8 ({@damage 1d6 + 5}) psychic damage and must succeed on a {@dc 18} Wisdom saving throw or suffer a short-term {@variantrule madness}. A target can repeat the saving throw at the end of each of its turns, ending the current madness on a success."
+					]
+				},
+				{
+					"name": "Control Preys",
+					"entries": [
+						"Mylakhrion can move one or more creatures he is restraining up to 60 feet as long as the tentacles are within 60 feet from him, and he can take one of the following actions:",
+						"- He can crush every creature he is restraining with his tentacles. Each creature takes 12 ({@damage 2d6 + 5}) bludgeoning damage or half this damage if it succeed a {@dc 18} Strength saving throw.",
+						"- He can throw one or more creatures he is restraining up to {@dice 2d4 x 10} feet in a direction he chooses."
+					]
+				},
+				{
+					"name": "Sweeping Tentacle {@recharge 5}",
+					"entries": [
+						"Mylakhrion lashes out a tentacle that sweeps everything around 30 ft. from him while the mouths on it shriek and twist and thousands of tiny transparent spiders seem to swarm the targets up. Each creature in the area takes 33 ({@damage 8d6 + 5}) bludgeoning damage and it must succeed on a {@dc 18} Wisdom saving throw or suffer a short-term {@variantrule madness}. A target can repeat the saving throw at the end of each of its turns, ending the current effect on a success."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Move Tentacle",
+					"entries": [
+						"When a creature makes an attack roll against a Mylakhrion's tentacle, he can move that tentacle up to 30 ft. in a direction he chooses."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Mylakhrion moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Control Preys (costs two actions)",
+					"entries": [
+						"Mylakhrion uses Control Preys."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Calcolo CR",
+					"Challenge Rating: 15 (16, leggi fine descrizione)",
+					"Offensive CR: 19",
+					"Defensive CR: 11",
+					"Proficiency Bonus: +5",
+					"Effective HP: 212 (20d8+80)",
+					"Effective AC: 19",
+					"Average Damage Per Round: 122",
+					"Effective Attack Bonus: +10",
+					"Expected CR: 16",
+					"Defensive",
+					"Hit Points: 187",
+					"Armor Class: 18 (17+1 dovuto all'ingresso in combattimento con Antilife Shell)",
+					"Offensive",
+					"Damage Per Round: 120",
+					"Attack Bonus/Save DC: 10",
+					"Use Saves? No",
+					"Vulnerabilities: No",
+					"Resistances/Immunities: Sì",
+					"Flies and can deal damage at range (CR 0-9 only): No",
+					"Save Proficiencies: 0-2",
+					"Traits",
+					"Aggressive (utilizzato per la possibilità di muoversi molto e senza provocare attacchi di opportunità)",
+					"Constrict",
+					"Routine di attacco:",
+					"Turno 1,2 e 3: Hunger Of Hadar, 2xFanged Tentacle, 1xMaddening Grasp, 1xControl Prey (Azione Leggendaria)",
+					"DPR: 120",
+					"Questa routine di attacco ottieni alti danni aggiungendo la possibilità di infliggere pazzia. Mylakhrion entra in battaglia con Antilife Shell (permacastato) e casta immediatamente Hunger Of Hadar prima di attaccare.",
+					"+1 flat alla CR per la possibilità di infliggere pazzia",
+					"= CR 16"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mylakhrion.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mylakhrion.png",
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DS",
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"frightened",
+				"incapacitated",
+				"invisible"
+			]
+		},
+		{
+			"name": "Cult Cleric",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 36",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"intimidation": "+7",
+				"perception": "+5",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"Undercommon"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Cult Cleric is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following cleric spells prepared:"
+					],
+					"footerEntries": [
+						"*Constitution saving throw, 6d6 cold damage"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell arms of Hadar}",
+								"{@spell bane}",
+								"{@spell cure wounds}",
+								"{@spell guiding bolt} (see \"Actions\" below)"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell hold person}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell fireball}*",
+								"{@spell hunger of Hadar}",
+								"{@spell revivify}",
+								"{@spell sending}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of Terror",
+					"entries": [
+						"When a hostile creature within 5 feet of the Cult Cleric makes an attack roll or a saving throw, it has disadvantage on the roll. Creatures that are immune to the {@condition frightened} condition are immune to this trait."
+					]
+				},
+				{
+					"name": "Tactical Discipline",
+					"entries": [
+						"The Cult Cleric has advantage on all ability checks and saving throws made during combat."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The black gauntlet makes two attacks with its quarterstaff."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Guiding Bolt (1st-Level Spell; Requires a Spell Slot)",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one creature. {@h}14 ({@damage 4d6}) radiant damage, and the next attack roll made against the target before the end of the Cult Cleric's next turn has advantage. If the Cult Cleric casts this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Black Gauntlet of Bane.png?v=1.110.1",
+					"Challenge Rating: 5 (5+2=7 di Aura Of Terror e Tactical Discipline)",
+					"Offensive CR: 7",
+					"Defensive CR: 2",
+					"Proficiency Bonus: +3",
+					"Effective HP: 77 (9d8+36)",
+					"Effective AC: 16",
+					"Average Damage Per Round: 50",
+					"Save DC: 15",
+					"Expected CR:  6",
+					"Defensive",
+					"Hit Points: 77",
+					"Armor Class: 16",
+					"Offensive",
+					"Damage Per Round: 50",
+					"Attack Bonus/Save DC: 15",
+					"Use Saves? Sì",
+					"Vulnerabilities: No",
+					"Resistances/Immunities: No",
+					"Flies and can deal damage at range (CR 0-9 only): No",
+					"Save Proficiencies: 0-2",
+					"Routine di attacco:",
+					"Turno 1: Guardian Of Faith",
+					"Turno 2: Fireball (6d6) con slot lv 4",
+					"Turno 3: Fireball (6d6) con slot lv 3",
+					"DPR: 50"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Cult%20Cleric.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Cult%20Cleric.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Cult Paladin",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"wis": "+5",
+				"str": "+6"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+5",
+				"religion": "+3"
+			},
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Cult Paladin is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell protection from evil and good}",
+								"{@spell thunderous smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell find steed}",
+								"{@spell magic weapon}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Smite",
+					"entries": [
+						"After the Cult Paladin hits a target with a melee weapon, he can expend a 1st level spell slot or higher to deal extra {@damage 2d8} necrotic damage, and adds an extra {@damage 1d8} for every slot level above 1st."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Cult Paladin makes two attacks with its glaive or its shortbow."
+					]
+				},
+				{
+					"name": "Glaive",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Cult Paladin adds 3 to its AC against one melee attack that would hit it. To do so, the Cult Paladin must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Blackguard.png?v=1.110.1",
+					"Challenge Rating: 5",
+					"Offensive CR: 5",
+					"Defensive CR: 4",
+					"Proficiency Bonus: +3",
+					"Effective HP: 75 (10d8+30)",
+					"Effective AC: 19",
+					"Average Damage Per Round: 33",
+					"Effective Attack Bonus: +6",
+					"Expected CR: 6",
+					"Defensive",
+					"Hit Points: 75",
+					"Armor Class: 18",
+					"Offensive",
+					"Damage Per Round: 33",
+					"Attack Bonus/Save DC: 6",
+					"Traits",
+					"Parry"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Cult%20Paladin.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Cult%20Paladin.png",
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"prone"
+			]
+		},
+		{
+			"name": "Cult Warlock",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 15,
+			"int": 12,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"arcana": "+4",
+				"history": "+4",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Common",
+				"Deep Speech",
+				"telepathy 30 ft."
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Cult Warlock is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"footerEntries": [
+						"*2 beams, +3 force damage for each beam"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast}*",
+								"{@spell mage hand}"
+							]
+						},
+						"3": {
+							"spells": [
+								"{@spell arms of Hadar}",
+								"{@spell counterspell}",
+								"{@spell crown of madness}",
+								"{@spell dispel magic}",
+								"{@spell hunger of Hadar}",
+								"{@spell mage armor}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Hex (3/Short Rest)",
+					"entries": [
+						"The Cult Warlock can cast {@spell hex} without expending a spell slot."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Warlock of the Great Old One.png?v=1.110.1",
+					"Challenge Rating: 3",
+					"Offensive CR: 5",
+					"Defensive CR: 1",
+					"Proficiency Bonus: +2",
+					"Effective HP: 65 (10d8+20)",
+					"Effective AC: 15",
+					"Average Damage Per Round: 35",
+					"Effective Attack Bonus: +6",
+					"Expected CR: 5",
+					"Defensive",
+					"Hit Points: 65",
+					"Armor Class: 15",
+					"Offensive",
+					"Damage Per Round: 35",
+					"Attack Bonus/Save DC: 6"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Cult%20Warlock.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Cult%20Warlock.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"restrained"
+			]
+		},
+		{
+			"name": "Pincer",
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 15",
+				"average": 37
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 16,
+			"int": 1,
+			"wis": 9,
+			"cha": 3,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"slashing"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Pincer makes one attack with its claws and one with its sting."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, and the target is {@condition grappled} (escape {@dc 14}). The Pincer has two claws, each of which can grapple only one target."
+					]
+				},
+				{
+					"name": "Sting",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 14} Constitution saving throw, taking 18 ({@damage 4d8}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Challenge Rating: 3",
+					"Offensive CR: 4",
+					"Defensive CR: 2",
+					"Proficiency Bonus: +2",
+					"Effective HP: 76 (5d8+15)",
+					"Effective AC: 16",
+					"Average Damage Per Round: 32",
+					"Effective Attack Bonus: +6",
+					"Expected CR: 3",
+					"Defensive",
+					"Hit Points: 38",
+					"Armor Class: 15",
+					"Offensive",
+					"Damage Per Round: 32",
+					"Attack Bonus/Save DC: 6",
+					"Resistances/Immunities: Resistances",
+					"Traits",
+					"Constrict"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Pincer%202.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Pincer.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Pincer.png",
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Grasper",
+			"shortName": true,
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d10 + 51",
+				"average": 144
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 17,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Grasper makes two attacks choosing among Bite and Tentacle attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Constitution saving throw or become {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage. If the target is Medium or smaller, it is {@condition grappled} (escape {@dc 14}) and {@condition restrained} until the grapple ends. The Grasper has two tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Tentacle Slam",
+					"entries": [
+						"The Grasper slams creatures {@condition grappled} by it into each other or a solid surface. Each creature must succeed on a {@dc 14} Constitution saving throw or take 10 ({@damage 2d6 + 3}) bludgeoning damage and be {@condition stunned} until the end of the Grasper's next turn. On a successful save, the target takes half the bludgeoning damage and isn't {@condition stunned}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Otyugh.png?v=1.110.1"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Grasper.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Grasper.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Molten Mass Horror",
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 48",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"con": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"vulnerable": [
+				"acid",
+				"fire"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Confusing Gaze",
+					"entries": [
+						"When a creature starts its turn within 30 feet of the Molten Mass Horror and is able to see the Molten Mass Horror's eyes, the Molten Mass Horror can magically force it to make a {@dc 16} Charisma saving throw, unless the Molten Mass Horror is {@condition incapacitated}.",
+						"On a failed saving throw, the creature can't take reactions until the start of its next turn and rolls a {@dice d4} to determine what it does during that turn.",
+						"On a 1, the creature does nothing.",
+						"On a 2, the creature falls {@condition prone}.",
+						"On a 3, the creature takes no action but uses all its movement to move in a random direction.",
+						"On a 4, the creature makes one melee attack against a random creature, or it does nothing if no creature is within reach.",
+						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the Molten Mass Horror until the start of its next turn, when it can avert its eyes again. If the creature looks at the Molten Mass Horror in the meantime, it must immediately make the save."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The Molten Mass Horror can burrow through solid rock at half its burrowing speed and leaves a 5 foot-wide, 8-foot-high tunnel in its wake."
+					]
+				},
+				{
+					"name": "Dripping Mass",
+					"entries": [
+						"If the Molten Mass Horror gets hit, its decaying liquids splash around it while it screeches. Each creature within 5 ft. of it takes {@damage 2d6} poison damage and must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of the Molten Mass Horror for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Molten Mass Horror makes two attacks: one with its Tentacled Claws and one with its Exposed Teeth."
+					]
+				},
+				{
+					"name": "Tentacled Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Exposed Teeth",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Umber Hulk.png?v=1.110.1",
+					"Challenge Rating: 4",
+					"Offensive CR: 5",
+					"Defensive CR: 3",
+					"Proficiency Bonus: +2 (3)",
+					"Effective HP: 85 (16d10+48)",
+					"Effective AC: 18",
+					"Average Damage Per Round: 38",
+					"Save DC: 16",
+					"Expected CR: 5",
+					"Defensive",
+					"Hit Points: 136",
+					"Armor Class: 18",
+					"Offensive",
+					"Damage Per Round: 31",
+					"Save DC: 16",
+					"Vulnerabilities: Sì",
+					"Traits",
+					"Frightful Presence (effetto di paura quando si è vicini al mostro mentre viene colpito)",
+					"Heated Body: 2d6"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Molten%20Mass%20Horror.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Molten%20Mass%20Horror.png",
+			"senseTags": [
+				"SD",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Shrieker",
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "11d10 + 44"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 18,
+			"int": 8,
+			"wis": 13,
+			"cha": 8,
+			"save": {
+				"dex": "+5",
+				"wis": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Shrieker has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Shrieker makes two attacks: one with its Fangs and one with its Claws."
+					]
+				},
+				{
+					"name": "Fangs",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Spores {@recharge}",
+					"entries": [
+						"A 15-foot-radius cloud of toxic spores extends out from the Shrieker. The spores spread around corners. Each creature in that area must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned}. While {@condition poisoned} in this way, a target takes 5 ({@damage 1d10}) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Stunning Shriek (1/Day)",
+					"entries": [
+						"The Shrieker emits a horrific shriek. Each creature within 20 feet of it that can hear it must succeed on a {@dc 15} Constitution saving throw or be {@condition stunned} until the end of the Shrieker's next turn."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Vrock.png?v=1.110.1",
+					"Challenge Rating: 7",
+					"Offensive CR: 4",
+					"Defensive CR: 10",
+					"Proficiency Bonus: +3",
+					"Effective HP: 196 (11d10+44)",
+					"Effective AC: 19",
+					"Average Damage Per Round: 24",
+					"Effective Attack Bonus: +7",
+					"Expected CR: 6",
+					"Defensive",
+					"Hit Points: 105",
+					"Armor Class: 15",
+					"Offensive",
+					"Damage Per Round: 24",
+					"Attack Bonus: 7",
+					"Vulnerabilities: No (una sola al freddo, negligible)",
+					"Resistances/Immunities: Resistenze (ignorata l'immunità al veleno)",
+					"Save Proficiencies: 2",
+					"Traits:",
+					"Magic Resistance"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Shrieker.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Shrieker.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"stunned"
+			]
+		},
+		{
+			"name": "Gazer",
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "H",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 84",
+				"average": 175
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 22,
+			"int": 9,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"cold"
+			],
+			"vulnerable": [
+				"radiant",
+				"thunder"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Fear of Fire",
+					"entries": [
+						"If the Gazer takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn."
+					]
+				},
+				{
+					"name": "Death Of Frost",
+					"entries": [
+						"When the Gazer dies, the cold gases inside it are suddenly released causing an explosion of frost around the Gazer. Each creature within 20 ft. of the Gazer takes 21 {@damage 6d6} cold damage, or half as much if it succeed on a {@dc 18} Constitution saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Gazer can use its Chilling Gaze and makes two claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage plus 7 ({@damage 2d6}) cold damage."
+					]
+				},
+				{
+					"name": "Chilling Gaze",
+					"entries": [
+						"The Gazer targets one creature it can see within 30 feet of it. If the target can see the Gazer, the target must succeed on a {@dc 18} Constitution saving throw against this magic or take 21 ({@damage 6d6}) cold damage and then be {@condition paralyzed} for 1 minute, unless it is immune to cold damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends on it, the target is immune to this Gazer's gaze for 1 hour."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge}",
+					"entries": [
+						"The Gazer exhales a 30-foot cone of frigid air. Each creature in that area must make a {@dc 18} Constitution saving throw, taking 45 ({@damage 10d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Abominable Yeti.png?v=1.110.1"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Gazer.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Gazer.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Spitter",
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d10 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 2,
+			"wis": 11,
+			"cha": 4,
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"vulnerable": [
+				"piercing"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The Spitter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the Spitter knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The Spitter ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}7 ({@damage 1d8 + 3}) poison damage."
+					]
+				},
+				{
+					"name": "Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 12} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Giant Spider.png?v=1.110.1"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Spitter.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Spitter.png",
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			]
+		},
+		{
+			"name": "Slasher",
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 15,
+			"dex": 18,
+			"con": 15,
+			"int": 7,
+			"wis": 12,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"vulnerable": [
+				"slashing"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The Slasher has advantage on an attack roll against a creature if at least one of the Slasher's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Slasher makes three slash attacks."
+					]
+				},
+				{
+					"name": "Slash",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Adult Kruthik.png?v=1.110.1"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Slasher.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Slasher.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Mimesi",
+			"shortName": true,
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 39",
+				"average": 97
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 19,
+			"con": 16,
+			"int": 7,
+			"wis": 16,
+			"cha": 7,
+			"save": {
+				"dex": "+7"
+			},
+			"skill": {
+				"perception": "+9",
+				"survival": "+6",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"vulnerable": [
+				"acid",
+				"lightning"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Avoidance",
+					"entries": [
+						"If Mimesi is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Confusing Texture",
+					"entries": [
+						"Mimesi's skin is composed of an ever-changing texture that mimics its own form and composition. When Mimesi moves, the texture make it seem that it didn't actually move, as if an image was projected right on its body, causing attack rolls against Mimesi to have disadvantage. If Mimesi doesn't move on its turn or its speed becomes 0, this trait is disrupted until it moves again."
+					]
+				},
+				{
+					"name": "Hunter's Mimetization {@recharge 5}",
+					"entries": [
+						"Mimesi can magically turn {@condition invisible} with a bonus action for 1 minute or until it attacks."
+					]
+				},
+				{
+					"name": "Hunter's Moves And Senses",
+					"entries": [
+						"Mimesi's darkvision lets it see normally in darkness.",
+						"Also if Mimesi is {@condition invisible} or hidden and hits a creature, it takes an extra 10 ({@damage 3d6}) damage of the same type of the attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mimesi makes two attacks: one with its Bite and one with its Claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Impalation (1/Short Rest)",
+					"entries": [
+						"Mimesi moves at least 20 feet towards a creature, jumps and tries to impalate it with the quills on its back, landing {@condition prone}. The target must make a {@dc 16} Dexterity saving throw, and it has disadvantage if it can't see Mimesi. On a failure, it is knocked {@condition prone}, {@condition restrained}  on the ground impaled by the quills and it takes 28 ({@damage 8d6}) piercing damage. The target can use an action to make a successful {@dc 16} Strength (Athletics) or Dexterity (Acrobatics) check (its choice) to free itself from the quills. If it succeed on the saving throw, it takes only half damage and doesn't suffer any other effect."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Displacer Beast.png?v=1.110.1",
+					"Challenge Rating: 4 (5, visto che ci arriverebbe se avesse pochi hp in più)",
+					"Offensive CR: 5",
+					"Defensive CR: 3",
+					"Proficiency Bonus: +2 (3)",
+					"Effective HP: 49 (13d8+39)",
+					"Effective AC: 22",
+					"Average Damage Per Round: 31",
+					"Effective Attack Bonus: +8",
+					"Expected CR: 5",
+					"Defensive",
+					"Hit Points: 98",
+					"Armor Class: 19 (15+4 dovuti allo svantaggio al colpirla se si muove)",
+					"Offensive",
+					"Damage Per Round: 31",
+					"Attack Bonus: 8",
+					"Routine di attacco",
+					"Turno 1: Hunter's Mimetization, 1xImpalation",
+					"Turno 2 e 3: 1xBite, 1xClaws",
+					"DPR: 92 / 3 = 31",
+					"Vulnerabilities: Sì",
+					"Traits",
+					"Avoidance",
+					"Superior Invisibility"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mimesi.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mimesi.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Mimesi Alpha",
+			"shortName": true,
+			"group": "Eldritch Aberrations",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "23d10 + 92",
+				"average": 218
+			},
+			"speed": {
+				"walk": 60,
+				"climb": 40
+			},
+			"str": 23,
+			"dex": 22,
+			"con": 18,
+			"int": 9,
+			"wis": 18,
+			"cha": 8,
+			"save": {
+				"dex": "+10",
+				"str": "+10"
+			},
+			"skill": {
+				"perception": "+12",
+				"survival": "+8",
+				"stealth": "+14",
+				"athletics": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"vulnerable": [
+				"acid",
+				"lightning"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Avoidance",
+					"entries": [
+						"If Mimesi Alpha is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Confusing Texture",
+					"entries": [
+						"Mimesi Alpha's skin is composed of an ever-changing texture that mimics its own form and composition. When Mimesi Alpha moves, the texture make it seem that it didn't actually move, as if an image was projected right on its body, causing attack rolls against Mimesi Alpha to have disadvantage. If Mimesi Alpha doesn't move on its turn or its speed becomes 0, this trait is disrupted until it moves again."
+					]
+				},
+				{
+					"name": "Hunter's Mimetization {@recharge 5}",
+					"entries": [
+						"Mimesi Alpha can magically turn {@condition invisible} with a bonus action for 1 minute or until it attacks."
+					]
+				},
+				{
+					"name": "Hunter's Moves And Senses",
+					"entries": [
+						"Mimesi Alpha's darkvision lets it see normally in darkness.",
+						"Also if Mimesi Alpha is {@condition invisible} or hidden and hits a creature, it takes an extra 14 ({@damage 4d6}) damage of the same type of the attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mimesi Alpha makes three attacks: one with its Bite, one with its Claws and one with its Tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}23 ({@damage 5d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"Mimesi Alpha makes this attack with advantage if the target is {@condition prone} or {@condition restrained}.",
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}20 ({@damage 4d6 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Impalation {@recharge 5}",
+					"entries": [
+						"Mimesi moves at least 20 feet towards a creature, jumps and tries to impalate it with the quills on its back, landing {@condition prone}. The target must make a {@dc 18} Dexterity saving throw, and it has disadvantage if it can't see Mimesi. On a failure, it is knocked {@condition prone}, {@condition restrained}  on the ground impaled by the quills and it takes 56 ({@damage 16d6}) piercing damage. The target can use an action to make a successful {@dc 18} Strength (Athletics) or Dexterity (Acrobatics) check (its choice) to free itself from the quills. If it succeed on the saving throw, it takes only half damage and doesn't suffer any other effect."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"https://5e.tools/img/AHM/Displacer Beast.png?v=1.110.1",
+					"Challenge Rating: 11",
+					"Offensive CR: 11",
+					"Defensive CR: 10",
+					"Proficiency Bonus: +4",
+					"Effective HP: 136 (23d10+92)",
+					"Effective AC: 25",
+					"Average Damage Per Round: 65",
+					"Effective Attack Bonus: +10",
+					"Expected CR: 5",
+					"Defensive",
+					"Hit Points: 218",
+					"Armor Class: 21 (17+4 dovuti allo svantaggio al colpirla se si muove)",
+					"Offensive",
+					"Damage Per Round: 65",
+					"Attack Bonus: 10",
+					"Routine di attacco",
+					"Turno 1: Hunter's Mimetization, 1xImpalation",
+					"Turno 2 e 3: 1xBite, 1xClaws, 1xTail",
+					"DPR: 196 / 3 = 65",
+					"Vulnerabilities: Sì",
+					"Resistances/Immunities: Resistances",
+					"Traits",
+					"Avoidance",
+					"Constrict",
+					"Superior Invisibility"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mimesi.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/master/img/Mimesi.png",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			]
+		},
+		{
+			"name": "Regon",
+			"source": "AlessandrosHomebrewMonsters",
+			"page": 87,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"arcanist"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"air barrier"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 16,
+			"int": 20,
+			"wis": 18,
+			"cha": 15,
+			"save": {
+				"con": "+6",
+				"wis": "+7",
+				"int": "+8"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+8",
+				"insight": "+7",
+				"persuasion": "+5"
+			},
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Primordial",
+				"Thorass"
+			],
+			"cr": "8",
+			"gear": [
+				"chain mail|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Arcanism",
+					"headerEntries": [
+						"The cultist casts one of the following arcanisms, using Intelligence as the spellcasting ability (spell save {@dc 15}). The arcanisms can't be counterspelled nor dispelled by Weave magic:"
+					],
+					"will": [
+						"{@spell Elementalism|XPHB}",
+						"{@spell Mage Hand|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell fly|XPHB}",
+							"{@spell see invisibility|XPHB}",
+							"{@spell silence|XPHB}"
+						],
+						"2e": [
+							"{@spell fireball|XPHB}",
+							"{@spell gaseous form|XPHB}",
+							"{@spell slow|XPHB}"
+						],
+						"1e": [
+							"{@spell reverse gravity|XPHB}",
+							"{@spell telekinesis|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Regon makes two attacks, using Elemental Flail or Elemental Claw in any combination."
+					]
+				},
+				{
+					"name": "Elemental Flail",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}25 ({@damage 6d6 + 4}) damage of a type chosen by Regon: Acid, Cold, Fire, Lightning, or Thunder."
+					]
+				},
+				{
+					"name": "Elemental Claw",
+					"entries": [
+						"{@atkr r} {@hit 7}, range 120 ft. {@h}22 ({@damage 4d10}) damage of a type chosen by Regon: Acid, Cold, Fire, Lightning, or Thunder. If the target is a Medium or smaller creature, Regon moves the target up to 10 feet straight toward or away from itself."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Elemental Absorption (1/Day)",
+					"entries": [
+						"{@actTrigger} Regon takes Acid, Cold, Fire, Lightning, or Thunder damage. {@actResponse} Regon gives itself {@variantrule Resistance|XPHB} to that instance of damage and gains 10 {@variantrule Temporary Hit Points|XPHB}."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"individual",
+				"relics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"entries": [
+							"Elemental cultists harness destructive natural forces to cleanse the world of civilization or prove the dominance of one element over all others. Such cultists are aligned with Elemental monsters or wicked immortals such as the Princes of Elemental Evil or the Elder Elemental Eye."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Cultists",
+						"entries": [
+							"{@i Doomsayers and Fanatics}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "Individual, {@table Random Magic Items - Relics|XDMG|Relics}"
+									}
+								]
+							},
+							"Cultists use magic and extreme measures to spread radical beliefs. Some privately pursue esoteric secrets, while others form shadowy cabals seeking to bring about terrifying ends. Cultists often follow obscure mystical traditions or obsess over interpretations of ancient prophecies. They might worship supernatural patrons—deities, otherworldly creatures, manipulative alien minds, or stranger forces. Roll on or choose a result from the Cultist Agendas table to inspire what a cultist seeks to achieve.",
+							{
+								"type": "table",
+								"caption": "Cultist Agendas",
+								"colLabels": [
+									"1d6",
+									"The Cultist Strives To..."
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Bring about the end of a dominant order, an age, or the world."
+									],
+									[
+										"2",
+										"Burn away the comfortable lies of reality, revealing forgotten or terrible truths."
+									],
+									[
+										"3",
+										"Expand their faith though mind control or supernatural coercion."
+									],
+									[
+										"4",
+										"Make global changes, like sinking the land or awakening volcanoes."
+									],
+									[
+										"5",
+										"Remake life on a mass scale, altering other creatures' bodies or spiritual beings."
+									],
+									[
+										"6",
+										"Summon their deity or its herald, weapon, or realm into their world."
+									]
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Occult Symbols",
+								"entries": [
+									"Cults often identify with symbols that exemplify their beliefs. Such symbols might mark objects important to the cult, as well as the dress and bodies of cultists themselves. These symbols might be broadly understandable, or they might have meaning only to cultists. Roll twice on or choose results from the Cult Symbols table to inspire a cult's icons.",
+									{
+										"type": "table",
+										"caption": "Cult Symbols",
+										"isNameGenerator": true,
+										"colLabels": [
+											"1d10",
+											"The Symbol Is...",
+											"Depicted As..."
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-5",
+											"col-5"
+										],
+										"rows": [
+											[
+												"1",
+												"An alchemical sign",
+												"A calendar or map"
+											],
+											[
+												"2",
+												"An animal",
+												"A crest or as heraldry"
+											],
+											[
+												"3",
+												"A celestial body",
+												"An elaborate diagram"
+											],
+											[
+												"4",
+												"A deity's icon",
+												"A metaphorical image"
+											],
+											[
+												"5",
+												"An element",
+												"A mystical being"
+											],
+											[
+												"6",
+												"An eye",
+												"Part of an equation"
+											],
+											[
+												"7",
+												"A geometric shape",
+												"A repeating pattern"
+											],
+											[
+												"8",
+												"A letter or number",
+												"A series of scratches"
+											],
+											[
+												"9",
+												"Part of a monster",
+												"A simple pictogram"
+											],
+											[
+												"10",
+												"A skull",
+												"A weapon or tool"
+											]
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Cult Members",
+								"entries": [
+									"Cults often form hierarchies around a charismatic or domineering leader. While cult members might work independently, they take their orders from superiors with greater supernatural powers. "
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Types of Cultists",
+								"entries": [
+									"Cults can organize around any mystical tradition, but many serve supernatural beings. Cult members often have abilities tied to the forces they worship."
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"Dread Tharizdun, power of the Elder Elemental Eye and master of all destructive forces, I am the Champion of Elemental Evil and am ready to carry out your wishes."
+										],
+										"by": "Rites of the Cult of Elemental Evil"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Regon.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Regon.png"
+			},
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Stone Throw",
+					"entries": [
+						"{@actSave dex} {@dc 15}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 9 ({@damage 2d8}) bludgeoning damage. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		}
+	]
+}
