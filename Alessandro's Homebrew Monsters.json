@@ -23,7 +23,9 @@
 			"shortName": "Mival",
 			"isNamedCreature": true,
 			"source": "AlessandrosHomebrewMonsters",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -286,16 +288,35 @@
 			"languageTags": [
 				"X"
 			],
-			"damageTags": [
-				"P"
-			],
 			"spellcastingTags": [
 				"CW"
 			],
 			"miscTags": [
-				"MW",
 				"RW",
+				"MW",
+				"MLW",
 				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
 			]
 		},
 		{
@@ -3494,8 +3515,8 @@
 				}
 			],
 			"hp": {
-				"average": 135,
-				"formula": "18d8 + 54"
+				"formula": "16d8 + 48",
+				"average": 120
 			},
 			"speed": {
 				"walk": 30
@@ -3570,13 +3591,13 @@
 				{
 					"name": "Elemental Flail",
 					"entries": [
-						"{@atkr m} {@hit 7}, reach 5 ft. {@h}25 ({@damage 6d6 + 4}) damage of a type chosen by Regon: Acid, Cold, Fire, Lightning, or Thunder."
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}18 ({@damage 4d6 + 4}) damage of a type chosen by Regon: Acid, Cold, Fire, Lightning, or Thunder."
 					]
 				},
 				{
 					"name": "Elemental Claw",
 					"entries": [
-						"{@atkr r} {@hit 7}, range 120 ft. {@h}22 ({@damage 4d10}) damage of a type chosen by Regon: Acid, Cold, Fire, Lightning, or Thunder. If the target is a Medium or smaller creature, Regon moves the target up to 10 feet straight toward or away from itself."
+						"{@atkr r} {@hit 7}, range 120 ft. {@h}16 ({@damage 3d10}) damage of a type chosen by Regon: Acid, Cold, Fire, Lightning, or Thunder. If the target is a Medium or smaller creature, Regon moves the target up to 10 feet straight toward or away from itself."
 					]
 				}
 			],
@@ -3804,6 +3825,12 @@
 					"entries": [
 						"{@actSave dex} {@dc 15}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 9 ({@damage 2d8}) bludgeoning damage. {@actSaveSuccess} Half damage."
 					]
+				},
+				{
+					"name": "Increase Gravity",
+					"entries": [
+						"{@actSave str} {@dc 15}, each creature in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within 60 ft. of Regon. {@actSaveFail} 7 ({@damage 2d6}) bludgeoning damage and the targets are {@condition prone}."
+					]
 				}
 			],
 			"damageTags": [
@@ -3813,11 +3840,422 @@
 				"F"
 			],
 			"savingThrowForced": [
-				"dexterity"
+				"dexterity",
+				"strength"
 			],
 			"savingThrowForcedSpell": [
 				"dexterity",
 				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Wendigo",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 7,
+			"wis": 12,
+			"cha": 4,
+			"passive": 13,
+			"cr": "3",
+			"gear": [
+				"club|xphb"
+			],
+			"trait": [
+				{
+					"name": "Abduct",
+					"entries": [
+						"The Wendigo needn't spend extra movement to move a creature it is grappling."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The Wendigo can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 13} Wisdom (Insight) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Wendigo makes two Claws attacks."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 10 ft. {@h}13 ({@damage 2d8+4}) Slashing damage. The Wendigo can choose to grapple the target instead of dealing damage."
+					]
+				},
+				{
+					"name": "Screech {@recharge 5}",
+					"entries": [
+						"{@actSave wis} {@dc 13}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 10 ({@damage 3d6}) Psychic damage and the target has the {@condition frightened} condition until the end of its next turn. {@actSaveSuccess} Half damage and the target is immune to this Wendigo's Screech for 1 hour."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"individual"
+			],
+			"miscTags": [
+				"MA",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"name": "Commoner",
+						"entries": [
+							"{@i Everyday Folk}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "Individual"
+									}
+								]
+							},
+							"Commoners constitute the majority of people who don't pursue magical talents, extraordinary training, or a life of adventure. Some are generous, helpful sorts, while others are more cautious in sharing what they have. Use the following list of jobs and roles to introduce commoners in your adventures:",
+							{
+								"type": "list",
+								"style": "list-no-bullets",
+								"columns": 3,
+								"items": [
+									"Artist",
+									"Baker",
+									"Bartender",
+									"Blacksmith",
+									"Butcher",
+									"Captive",
+									"Carpenter",
+									"Castaway",
+									"Cobbler",
+									"Cook",
+									"Dyer",
+									"Farmer",
+									"Fisher",
+									"Fletcher",
+									"Flimflam artist",
+									"Gossip",
+									"Hermit",
+									"Hooligan",
+									"Hunter",
+									"Innkeeper",
+									"Laborer",
+									"Lamplighter",
+									"Mason",
+									"Merchant",
+									"Miner",
+									"Mud lark",
+									"Patient",
+									"Pilgrim",
+									"Resurrectionist",
+									"Rioter",
+									"Scribe",
+									"Servant",
+									"Shepherd",
+									"Student",
+									"Tailor",
+									"Tanner",
+									"Town crier",
+									"Weaver",
+									"Youngster"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Wendigo.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Mimicry"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Wendigo%20Token.webp"
+			},
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Ravenous Wendigo",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "12d8 + 48",
+				"average": 102
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 18,
+			"int": 7,
+			"wis": 14,
+			"cha": 4,
+			"passive": 15,
+			"cr": "5",
+			"gear": [
+				"club|xphb"
+			],
+			"trait": [
+				{
+					"name": "Abduct",
+					"entries": [
+						"The Wendigo needn't spend extra movement to move a creature it is grappling."
+					]
+				},
+				{
+					"name": "Mimicry",
+					"entries": [
+						"The Wendigo can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 13} Wisdom (Insight) check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Wendigo uses Screech if it can and makes two Claws attacks."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 10 ft. {@h}18 ({@damage 3d8+5}) Slashing damage. The Wendigo can choose to grapple the target instead of dealing damage."
+					]
+				},
+				{
+					"name": "Screech {@recharge 5}",
+					"entries": [
+						"{@actSave wis} {@dc 13}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 14 ({@damage 4d6}) Psychic damage and the target has the {@condition frightened} condition until the end of its next turn. {@actSaveSuccess} Half damage and the target is immune to this Wendigo's Screech for 1 hour."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"individual"
+			],
+			"miscTags": [
+				"MA",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"name": "Commoner",
+						"entries": [
+							"{@i Everyday Folk}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "Individual"
+									}
+								]
+							},
+							"Commoners constitute the majority of people who don't pursue magical talents, extraordinary training, or a life of adventure. Some are generous, helpful sorts, while others are more cautious in sharing what they have. Use the following list of jobs and roles to introduce commoners in your adventures:",
+							{
+								"type": "list",
+								"style": "list-no-bullets",
+								"columns": 3,
+								"items": [
+									"Artist",
+									"Baker",
+									"Bartender",
+									"Blacksmith",
+									"Butcher",
+									"Captive",
+									"Carpenter",
+									"Castaway",
+									"Cobbler",
+									"Cook",
+									"Dyer",
+									"Farmer",
+									"Fisher",
+									"Fletcher",
+									"Flimflam artist",
+									"Gossip",
+									"Hermit",
+									"Hooligan",
+									"Hunter",
+									"Innkeeper",
+									"Laborer",
+									"Lamplighter",
+									"Mason",
+									"Merchant",
+									"Miner",
+									"Mud lark",
+									"Patient",
+									"Pilgrim",
+									"Resurrectionist",
+									"Rioter",
+									"Scribe",
+									"Servant",
+									"Shepherd",
+									"Student",
+									"Tailor",
+									"Tanner",
+									"Town crier",
+									"Weaver",
+									"Youngster"
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Ravenous%20Wendigo.jpg"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"save": {
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+7",
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"traitTags": [
+				"Mimicry"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Ravenous%20Wendigo%20Token.webp"
+			},
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
 				"wisdom"
 			]
 		}
