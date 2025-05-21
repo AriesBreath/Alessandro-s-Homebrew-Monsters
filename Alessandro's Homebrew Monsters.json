@@ -3555,7 +3555,7 @@
 				{
 					"name": "Arcanism",
 					"headerEntries": [
-						"The cultist casts one of the following arcanisms, using Intelligence as the spellcasting ability (spell save {@dc 15}). The arcanisms can't be counterspelled nor dispelled by Weave magic:"
+						"Regon casts one of the following arcanisms, using Intelligence as the spellcasting ability (spell save {@dc 15}). The arcanisms can't be counterspelled nor dispelled by Weave magic:"
 					],
 					"will": [
 						"{@spell Elementalism|XPHB}",
