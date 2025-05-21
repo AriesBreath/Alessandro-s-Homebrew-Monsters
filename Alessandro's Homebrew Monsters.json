@@ -3821,15 +3821,21 @@
 			"isNamedCreature": true,
 			"legendary": [
 				{
-					"name": "Stone Throw",
+					"name": "Elemental Attack",
 					"entries": [
-						"{@actSave dex} {@dc 15}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 9 ({@damage 2d8}) bludgeoning damage. {@actSaveSuccess} Half damage."
+						"Regon uses Elemental Flail or Elemental Claw."
+					]
+				},
+				{
+					"name": "Hail Of Stone",
+					"entries": [
+						"{@actSave dex} {@dc 15}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 7 ({@damage 2d6}) bludgeoning damage and the targets are moved by 10 ft. away from Regon. {@actSaveSuccess} Half damage."
 					]
 				},
 				{
 					"name": "Increase Gravity",
 					"entries": [
-						"{@actSave str} {@dc 15}, each creature in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within 60 ft. of Regon. {@actSaveFail} 7 ({@damage 2d6}) bludgeoning damage and the targets are {@condition prone}."
+						"{@actSave str} {@dc 15}, each creature in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within 60 ft. of Regon. {@actSaveFail} 7 ({@damage 2d6}) bludgeoning damage and the targets are {@condition prone}. {@actSaveSuccess} Half damage."
 					]
 				}
 			],
@@ -4055,7 +4061,7 @@
 			]
 		},
 		{
-			"name": "Ravenous Wendigo",
+			"name": "Wendigo, Ravenous",
 			"source": "AlessandrosHomebrewMonsters",
 			"size": [
 				"M"
@@ -4256,6 +4262,233 @@
 				"Y"
 			],
 			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Brom",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"wood elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 132,
+				"formula": "24d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 20,
+			"cha": 11,
+			"save": {
+				"wis": "+9",
+				"int": "+6"
+			},
+			"skill": {
+				"nature": "+6",
+				"perception": "+9",
+				"stealth": "+7",
+				"survival": "+9"
+			},
+			"passive": 19,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Druidic",
+				"Sylvan",
+				"Primordial"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The archdruid is an 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell mending}",
+								"{@spell poison spray}",
+								"{@spell produce flame}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell entangle}",
+								"{@spell faerie fire}",
+								"{@spell speak with animals}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell animal messenger}",
+								"{@spell beast sense}",
+								"{@spell hold person}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell conjure animals}",
+								"{@spell meld into stone}",
+								"{@spell water breathing}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell dominate beast}",
+								"{@spell locate creature}",
+								"{@spell stoneskin}",
+								"{@spell wall of fire}"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell commune with nature}",
+								"{@spell mass cure wounds}",
+								"{@spell tree stride}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell heal}",
+								"{@spell heroes' feast}",
+								"{@spell sunbeam}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell fire storm}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell animal shapes}"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell foresight}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Change Shape (2/Day)",
+					"entries": [
+						"The archdruid magically polymorphs into a beast or elemental with a challenge rating of 6 or less, and can remain in this form for up to 9 hours. The archdruid can choose whether its equipment falls to the ground, melds with its new form, or is worn by the new form. The archdruid reverts to its true form if it dies or falls {@condition unconscious}. The archdruid can revert to its true form using a bonus action on its turn.",
+						"While in a new form, the archdruid retains its game statistics and ability to speak, but its AC, movement modes, Strength, and Dexterity are replaced by those of the new form, and it gains any special senses, proficiencies, traits, actions, and reactions (except class features, legendary actions, and lair actions) that the new form has but that it lacks. It can cast its spells with verbal or somatic components in its new form.",
+						"The new form's attacks count as magical for the purpose of overcoming resistances and immunity to nonmagical attacks."
+					]
+				}
+			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"DU",
+				"S",
+				"P"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"paralyzed",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Archdruids watch over the natural wonders of their domains. They seldom interact with civilized folk unless there is a great threat to the natural order. An archdruid typically has one or more pupils who are druids (see the Monster Manual for statistics), and the archdruid's lair is usually guarded by loyal beasts and fey creatures."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Brom.jpg"
+						}
+					}
+				]
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Brom%20Token.webp"
+			},
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"I",
+				"R"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
 				"wisdom"
 			]
 		}
