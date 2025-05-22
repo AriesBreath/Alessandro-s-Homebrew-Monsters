@@ -3915,9 +3915,9 @@
 					]
 				},
 				{
-					"name": "Screech {@recharge 5}",
+					"name": "Screech (1/Day)",
 					"entries": [
-						"{@actSave wis} {@dc 13}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 10 ({@damage 3d6}) Psychic damage and the target has the {@condition frightened} condition until the end of its next turn. {@actSaveSuccess} Half damage and the target is immune to this Wendigo's Screech for 1 hour."
+						"{@actSave wis} {@dc 13}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 10 ({@damage 3d6}) Psychic damage and the target has the {@condition frightened} condition until the end of its next turn. {@actSaveSuccess} Half damage."
 					]
 				}
 			],
@@ -4102,7 +4102,7 @@
 				{
 					"name": "Mimicry",
 					"entries": [
-						"The Wendigo can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 13} Wisdom (Insight) check."
+						"The Wendigo can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful {@dc 15} Wisdom (Insight) check."
 					]
 				}
 			],
@@ -4122,7 +4122,7 @@
 				{
 					"name": "Screech {@recharge 5}",
 					"entries": [
-						"{@actSave wis} {@dc 13}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 14 ({@damage 4d6}) Psychic damage and the target has the {@condition frightened} condition until the end of its next turn. {@actSaveSuccess} Half damage and the target is immune to this Wendigo's Screech for 1 hour."
+						"{@actSave wis} {@dc 15}, each creature in a 10-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 14 ({@damage 4d6}) Psychic damage and the target has the {@condition frightened} condition until the end of its next turn. {@actSaveSuccess} Half damage and the target is immune to this Wendigo's Screech frightening effect for 1 hour."
 					]
 				}
 			],
