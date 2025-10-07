@@ -4061,7 +4061,7 @@
 			]
 		},
 		{
-			"name": "Wendigo, Ravenous",
+			"name": "Wendigo Ravenous",
 			"source": "AlessandrosHomebrewMonsters",
 			"size": [
 				"M"
@@ -4489,6 +4489,589 @@
 				"constitution",
 				"dexterity",
 				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Aretor",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Half-Elf"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item studded leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 16,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"dex": "+9",
+				"int": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"stealth": "+13",
+				"deception": "+6",
+				"sleight of hand": "+9"
+			},
+			"passive": 11,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Thieves' cant",
+				"Primordial"
+			],
+			"cr": "10",
+			"gear": [
+				"light crossbow|xphb",
+				"shortsword|xphb",
+				"studded leather armor|xphb"
+			],
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Aretor is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, Aretor instead takes no damage if it succeeds on the save and only half damage if it fails. It can't use this trait if it has the {@condition Incapacitated|XPHB} condition."
+					]
+				},
+				{
+					"name": "Mind Shield",
+					"entries": [
+						"Aretor is immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Aretor makes three attacks, using Scimitar or Light Crossbow in any combination."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}8 ({@damage 1d6 + 5}) Piercing damage plus 21 ({@damage 6d6}) Poison damage, and the target has the {@condition Poisoned|XPHB} condition until the start of Aretor's next turn."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atkr r} {@hit 9}, range 80/320 ft. {@h}9 ({@damage 1d8 + 5}) Piercing damage plus 24 ({@damage 7d6}) Poison damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Aretor takes the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"implements",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TC",
+				"P"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RA",
+				"RNG"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"name": "Assassin",
+						"entries": [
+							"{@i Contract Killer}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "{@table Random Magic Items - Implements|XDMG|Implements}, Individual"
+									}
+								]
+							},
+							"Assassins are professional killers skilled at stealthily approaching their victims and striking unseen. Most assassins kill for a reason, perhaps hiring themselves out to wealthy patrons or slaying for an unscrupulous cause. They use poisons and other deadly tools, and they might carry equipment to help them break into secure areas or avoid capture.",
+							"Many assassins adhere to a professional code or exhibit some signature quirk. Roll on or choose a result from the Assassin Modus Operandi table to inspire an assassin's distinctive habits.",
+							{
+								"type": "table",
+								"caption": "Assassin Modus Operandi",
+								"colLabels": [
+									"1d6",
+									"The Assassin Is Infamous For..."
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Arranging their victims in artful tableaux."
+									],
+									[
+										"2",
+										"Hiding within large objects, such as suits of armor or hollow furnishings."
+									],
+									[
+										"3",
+										"Leaving behind a signature item, such as a calling card, flower, seashell, or tooth."
+									],
+									[
+										"4",
+										"Posing as celebrities, holy people, or servants."
+									],
+									[
+										"5",
+										"Taking trophies from their victims."
+									],
+									[
+										"6",
+										"Using poison with a distinctive color or smell."
+									]
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Aretor.jpg"
+						}
+					}
+				]
+			},
+			"attachedItems": [
+				"light crossbow|phb",
+				"scimitar|phb"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"reaction": [
+				{
+					"name": "Parata",
+					"entries": [
+						"Aretor può aggiungere 4 alla sua CA in risposta ad un attacco, potenzialmente facendolo mancare."
+					]
+				}
+			],
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Scatto",
+					"entries": [
+						"Aretor si muove della sua velocità senza provocare attacchi di opportunità."
+					]
+				},
+				{
+					"name": "Furto",
+					"entries": [
+						"Aretor cerca di rubare un oggetto facilmente accessibile da una creatura, che deve riuscire un tiro su Atletica o Acrobazia con CD 17 per evitare il furto."
+					]
+				},
+				{
+					"name": "Incantesimo (1/round)",
+					"entries": [
+						"Aretor lancia Dispel Magic, consumandone l'utilizzo"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/aretor.Token.webp"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"daily": {
+						"2e": [
+							"{@spell counterspell|XPHB}",
+							"{@spell dispel magic|XPHB}",
+							"{@spell misty step|XPHB}",
+							"{@spell pass without trace|XPHB}"
+						]
+					},
+					"will": [
+						"{@spell mage hand|XPHB}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Caleth",
+			"source": "AlessandrosHomebrewMonsters",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Aasimar"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item +2 plate armor|xdmg}"
+					]
+				}
+			],
+			"hp": {
+				"average": 178,
+				"formula": "21d8 + 84"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 40,
+					"condition": "(Hover) when in Dreadful Aspect"
+				},
+				"canHover": true
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 18,
+			"int": 10,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"wis": "+5",
+				"cha": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Thorass"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Caleth casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 16}):"
+					],
+					"will": [
+						"{@spell Phantom Steed|XPHB}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Destructive Wave|XPHB} (Necrotic)"
+						],
+						"2e": [
+							"{@spell command|XPHB}",
+							"{@spell counterspell|XPHB}",
+							"{@spell dispel magic|XPHB}",
+							"{@spell fear|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Caleth has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Aura",
+					"entries": [
+						"Ally creatures of Caleth's choice in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from him are immune to Frightening and Charming effects. It can't use this trait if it has the {@condition Incapacitated|XPHB} condition."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Caleth makes three Longsword attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atkr m} {@hit 9}, reach 5 ft. {@h}10 ({@damage 1d10 + 5}) Slashing damage plus 10 ({@damage 3d6}) Necrotic damage."
+					]
+				},
+				{
+					"name": "Hellfire Orb {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 16}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point Caleth can see within 120 feet of itself. {@actSaveFail} 21 ({@damage 6d6}) Fire damage plus 21 ({@damage 6d6}) Necrotic damage. {@actSaveSuccess} Half damage."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"armaments"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"incapacitated",
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"entries": [
+							"When the leader of a villainous order rises as a death knight, their wicked devotees might join them in their cursed existence as death knight aspirants. These followers bear a measure of their leader's power and serve as they did in life, obediently following the death knight's decrees and heralding its terrible will."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Death Knights",
+						"entries": [
+							"{@i Haunted Commanders of Unliving Legions}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "{@table Random Magic Items - Armaments|XDMG|Armaments}"
+									}
+								]
+							},
+							"Champions of evil, death knights are armor-clad, skeletal warlords. Combining devastating martial prowess and blasphemous magic, these undying tyrants lead unholy legions against the living or brood in cursed citadels. Every death knight is haunted by a legacy of tragedy and dishonor that drives it to commit greater evils."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Caleth.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/Caleth%20Dreadful%20Aspect.jpg"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/calethDreadfulAspect.Token.webp"
+						}
+					}
+				]
+			},
+			"skill": {
+				"athletics": "+13",
+				"intimidation": "+8",
+				"perception": "+5"
+			},
+			"resist": [
+				"necrotic",
+				"radiant"
+			],
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"bonus": [
+				{
+					"name": "Smite",
+					"entries": [
+						"Immediately after Caleth hits a target with an attack roll, he can force that target to make a {@dc 16} Constitution saving throw. On a failed save, the target suffers one of the following effects of Caleth's choice:"
+					]
+				},
+				{
+					"name": "Blind",
+					"entries": [
+						"The target is {@condition blinded} for 1 minute. The {@condition blinded} target can repeat the save at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Shove",
+					"entries": [
+						"The target is pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Dreadful Aspect",
+					"entries": [
+						"Caleth sprouts ghostly black wings and gains a flying speed of 40 ft for 1 minute. The first time Dreadful Aspect is activated, each enemy within 30 feet of Caleth must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of Caleth for 1 minute. If a {@condition frightened} target ends its turn more than 30 feet away from Caleth, the target can repeat the saving throw, ending the effect on itself on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Affondo",
+					"entries": [
+						"Caleth si muove di metà della sua velocità ed esegue un attacco con Spada Lunga."
+					]
+				},
+				{
+					"name": "Attacco disarmato",
+					"entries": [
+						"Caleth tenta di afferrare, spingere di 10ft o mandare prona una creatura di taglia Large o inferiore, che deve riuscire un tiro salvezza su Forza o Destrezza (sua scelta) con CD 17 o subire l'effetto scelto da Caleth."
+					]
+				},
+				{
+					"name": "Incantesimo (1/round)",
+					"entries": [
+						"Caleth lancia Command o Dispel Magic, consumandone l'utilizzo."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/AriesBreath/Alessandro-s-Homebrew-Monsters/refs/heads/master/img/caleth.Token.webp"
+			},
+			"isNamedCreature": true,
+			"damageTags": [
+				"F",
+				"N",
+				"S"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R",
+				"T"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
 				"wisdom"
 			]
 		}
